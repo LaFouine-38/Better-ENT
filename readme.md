@@ -3,8 +3,7 @@
 # Extension ENT
 
 > Pour Chrome, Edge, Opera, Firefox...
-> 
-
+<br />
 
 ## Nouveautés
 
