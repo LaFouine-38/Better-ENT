@@ -13,7 +13,7 @@ function displayProfiles() {
 
 function addTemplate(/*type, */pseudo/*, password*/) {
     let newElement =
-    `<div data-pseudo=${pseudo}>
+    `<div class="user" data-pseudo=${pseudo}>
         <span style="bottom: 100%;">&nbsp;${pseudo}</span>
         <button id="activer" class="btn-profil">Se connecter</button>
     </div>`
