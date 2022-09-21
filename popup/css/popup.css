@@ -1,30 +1,32 @@
 #hostname {
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
     text-align: center;
-  }
-  
-  :root.desktop .tool:hover{
+}
+
+:root.desktop .tool:hover {
     background-color: rgb(73, 73, 73) !important;
-  }
-  
-  #user1 {
+}
+
+#user1 {
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
     text-align: left;
     font-size: 16px;
-  }
-  
-  hr{
+}
+
+hr {
     border: 0;
     border-top: 1px solid var(--hr-ink);
     margin: 0;
     padding: 0;
-  }
-  hr,.toolRibbon{
+}
+
+hr,
+.toolRibbon {
     background-color: rgba(0, 206, 209, 0.9) !important;
-  }
-  
-  #activer {
-    
+}
+
+#activer {
+
     background-color: transparent;
     float: right;
     border: 0;
@@ -33,8 +35,9 @@
     font-size: 16px;
     transition-duration: 0.3s;
     cursor: pointer;
-  }
-  #activer:hover {
+}
+
+#activer:hover {
     background-color: rgba(128, 128, 128, 0.793);
     color: white;
-  }
+}
