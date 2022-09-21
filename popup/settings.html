@@ -16,7 +16,7 @@
 <body class="settings" id="body">
     <h1 style="text-align: center;"><strong>Param&egrave;tres</strong></h1>
     <hr />
-    <div class="profil">
+    <div class="profil-creation">
         &nbsp;
         <select id="typeSelect" name="session" title="Veuillez choisir votre type de session" class="input-profil"
             required>
@@ -42,25 +42,6 @@
         <!-- <h2><strong>Configuration :</strong></h2> -->
         <!-- <h3>Niveaux de flou du fond écran : <input title="Gère le taux de flou sur le fond d'écran" id="slider" type="range" min="0" max="100" value="50" /></h3> -->
     </div>
-    <template class="profilCree">
-        <div class="profil">
-            &nbsp;
-            <select id="typeSelect" name="session" title="Veuillez choisir votre type de session" class="input-profil"
-                required>
-                <option value="0" class="input-profil" selected disabled>Type de session</option>
-                <option value="1" class="input-profil">Eleve</option>
-                <option value="2" class="input-profil">Parent</option>
-            </select>
-            &nbsp;
-            <input id="pseudo" class="input-profil" type="text" placeholder="Identifiant : x.xxxxx" required />
-            &nbsp;
-            <input id="password" class="input-profil" type="password" placeholder="Mot de passe : xxxxxx " required />
-            <button class="btn-profil" style="float: right;">Modifier le profil</button>
-            <button class="btn-profil" style="float: right;">Supprimer le profil</button>
-            <p id="errorField"></p>
-        </div>
-    </template>
-    <script src="./../scripts/utils/localStorage/localStorage.js"></script>
     <script src="./scripts/settings.js"></script>
 </body>
 
