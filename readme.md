@@ -2,7 +2,7 @@
 
 # Extension ENT
 
-> Pour Chrome, Edge, Opera, Firefox...
+> Pour Chrome, Edge, Opera... (Actuellement indisponible pour Firefox)
 <br />
 
 ## Nouveautés
