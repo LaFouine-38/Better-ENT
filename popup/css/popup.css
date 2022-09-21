@@ -7,7 +7,7 @@
     background-color: rgb(73, 73, 73) !important;
 }
 
-#user1 {
+.user {
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
     text-align: left;
     font-size: 16px;
