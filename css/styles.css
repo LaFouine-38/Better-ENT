@@ -201,10 +201,10 @@ div#test > div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
 
 }
 
-/* cahier de texte -> emploi du temps -> colonne de l'agenda (1 jour) */
-div.scheduler__day.js-scheduler__day > div.scheduler__events-overlay.scheduler__events-overlay--has-events.js-scheduler__events-overlay {
+/* cahier de texte -> emploi du temps -> colonne de l'agenda (1 jour) [a été patch par les devs de l'ent (fout la merde si c mit)]*/
+/* div.scheduler__day.js-scheduler__day > div.scheduler__events-overlay.scheduler__events-overlay--has-events.js-scheduler__events-overlay {
     grid-template-rows: repeat(120, 1fr) !important;
-}
+} */
 
 /* cahier de texte -> emploi du temps (container jours) -> background */
 div.js-scheduler__current-view > div.row.row--full.bg--white {
