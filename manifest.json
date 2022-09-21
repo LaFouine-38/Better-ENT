@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "Extension ENT",
+  "description": "Cette extension permet de moderniser l'apparence de l'ENT",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "16": "assets/16x.png",
+    "32": "assets/32x.png",
+    "64": "assets/64x.png",
+    "128": "assets/128x.png"
+  },
+  "permissions": ["tabs", "activeTab", "storage"],
+  "background": {
+    "service_worker": "scripts/handlers/backgroundScriptInit.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/*"
+      ],
+      "css": [
+        "css/styles.css"
+      ],
+      "js": [
+        "scripts/utils/localStorage/localStorage.js", "scripts/emploiDuTemps.js", "scripts/handlers/requestHandler.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO?execution=*"
+      ],
+      "css": [
+        "css/login.css"
+      ],
+      "js": ["scripts/connexion.js"]
+    },
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE&ACTION=AFFICHER_ELEVES_TAF&filtreAVenir=true"
+      ],
+      "css": [
+        "css/travailAFaire.css"
+      ]
+    }
+
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/legrandz.png"],
+      "matches": ["https://fleming-isere.ent.auvergnerhonealpes.fr/*"]
+    },
+    {
+      "resources": ["assets/legrandz.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

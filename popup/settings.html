@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Paramètres</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="settings" id="body">
+    <h1 style="text-align: center;"><strong>Param&egrave;tres</strong></h1>
+    <hr />
+    <div class="profil">
+        &nbsp;
+        <select id="typeSelect" name="session" title="Veuillez choisir votre type de session" class="input-profil"
+            required>
+            <option value="0" class="input-profil" selected disabled>Type de session</option>
+            <option value="1" class="input-profil">Eleve</option>
+            <option value="2" class="input-profil">Parent</option>
+        </select>
+        &nbsp;
+        <input id="pseudo" class="input-profil" type="text" placeholder="Identifiant : x.xxxxx" required />
+        &nbsp;
+        <input id="password" class="input-profil" type="password" placeholder="Mot de passe : xxxxxx " required />
+        <button id="add" class="btn-profil" style="float: right;">Créer</button>
+        <p id="errorField"></p>
+    </div>
+    <hr />
+    <h2><strong>Profils :</strong></h2>
+    <hr />
+    <div id="allProfiles"></div>
+
+    </div>
+    <hr />
+    <div>
+        <!-- <h2><strong>Configuration :</strong></h2> -->
+        <!-- <h3>Niveaux de flou du fond écran : <input title="Gère le taux de flou sur le fond d'écran" id="slider" type="range" min="0" max="100" value="50" /></h3> -->
+    </div>
+    <template class="profilCree">
+        <div class="profil">
+            &nbsp;
+            <select id="typeSelect" name="session" title="Veuillez choisir votre type de session" class="input-profil"
+                required>
+                <option value="0" class="input-profil" selected disabled>Type de session</option>
+                <option value="1" class="input-profil">Eleve</option>
+                <option value="2" class="input-profil">Parent</option>
+            </select>
+            &nbsp;
+            <input id="pseudo" class="input-profil" type="text" placeholder="Identifiant : x.xxxxx" required />
+            &nbsp;
+            <input id="password" class="input-profil" type="password" placeholder="Mot de passe : xxxxxx " required />
+            <button class="btn-profil" style="float: right;">Modifier le profil</button>
+            <button class="btn-profil" style="float: right;">Supprimer le profil</button>
+            <p id="errorField"></p>
+        </div>
+    </template>
+    <script src="./../scripts/utils/localStorage/localStorage.js"></script>
+    <script src="./scripts/settings.js"></script>
+</body>
+
+</html>

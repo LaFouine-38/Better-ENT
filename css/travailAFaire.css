@@ -1,0 +1,19 @@
+/* travail a faire -> barre de menu */
+main#screenreader-contenu > div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons{
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-right: 10px;
+}
+
+/* barre de menu partie basse */
+main#screenreader-contenu > div.content-filter {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: 10px;
+}
+
+/* sélécteur de matieres */
+select#matiere[name="matiere"].form__control.js-filtre-matiere {
+    border-radius: 10px;
+}

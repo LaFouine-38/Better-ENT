@@ -1,0 +1,51 @@
+*{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  body{
+    background-image: url("chrome-extension://__MSG_@@extension_id__/assets/legrandz.png") !important;
+    background-size:cover;
+  }
+  
+  h1{
+    font-size: 40px;
+  }
+  
+  h2{
+    font-size: 30px;
+  }
+  
+  h3{
+    font-size: 20px;
+  }
+  
+  #add{
+    bottom: 200px;
+  }
+  
+  .btn-profil{
+    background-color: darkgray;
+    position: static;
+    height: 28px;
+    width: 150px;
+  }
+  
+  .input-profil{
+    color: black;
+    position: static;
+  }
+  
+  .defilement{
+    height: 50px;
+    width: 150px;
+    overflow-y: auto;
+    }
+
+    .profil-cree {
+      margin-bottom: 5px;
+    }
+
+    .profil-cree input {
+      color: white;
+    }
