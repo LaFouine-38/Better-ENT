@@ -24,8 +24,7 @@
       "css": [
         "css/styles.css"
       ],
-      "js": [
-        "scripts/utils/localStorage/localStorage.js", "scripts/emploiDuTemps.js", "scripts/handlers/requestHandler.js"
+      "js": ["scripts/emploiDuTemps.js", "scripts/handlers/requestHandler.js"
       ]
     },
     {
