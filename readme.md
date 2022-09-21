@@ -4,6 +4,7 @@
 
 > Pour Chrome, Edge, Opera, Firefox...
 
+
 ## Nouveautés
 
 *  **Connexion**: connexion automatique et rapide, création de profils..
