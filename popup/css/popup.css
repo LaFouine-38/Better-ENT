@@ -1,3 +1,4 @@
+
 #hostname {
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
     text-align: center;
@@ -26,8 +27,7 @@ hr,
 }
 
 .connect-btn {
-
-    background-color: #14183a;
+    background-color: transparent;
     float: right;
     border: 0;
     color: white;
