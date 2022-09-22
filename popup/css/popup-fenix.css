@@ -61,7 +61,7 @@
  }
 
  #sticky {
-   background-color: var(--surface-1);
+   background-color: #222858;
    position: sticky;
    top: 0;
    z-index: 100;
