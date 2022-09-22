@@ -1,0 +1,100 @@
+/*header & footer*/
+header{
+  background-color: transparent !important;
+  border-bottom: transparent !important;
+}
+#bouton_profil{
+  color: darkturquoise;
+}
+
+/*#logoMinistereProfilSelected{
+  background-color: white !important;
+}
+#titreEduConnectProfilSelected{
+  color: white !important;
+  right: 50% !important;
+}*/
+.fr-header__brand.fr-enlarge-link{
+  display: none;
+}
+footer{
+  display: none;
+}
+
+/*fond ecran*/
+body{
+  background-image: url("chrome-extension://__MSG_@@extension_id__/assets/legrandz.png") !important;
+  background-size: cover;
+}
+.fr-skiplinks{
+  display: none;
+}
+.sidebar{
+  display: none;
+}
+.fr-col-md-8.fr-col-12{
+  z-index: 1000;
+  right: 15%;
+  bottom: 18%;
+  position: fixed;
+}
+#sidebar_maintenance{
+  z-index: 0;
+}
+.choixProfil{
+  position: absolute;
+  bottom: 85%;
+  right: 15%;
+}
+.fs-20.fr-mb-3w{
+  color: white !important;
+}
+
+/*login*/
+#contenu {
+  background-color: transparent;
+}
+#div_franceconnect{
+  display: none;
+}
+.choixProfil__btn{
+  border-radius: 15px;
+  background-color: rgba(32, 32, 32, 0.644) !important;
+  border: 2px solid black;
+}
+.choixProfil__icone.img{
+  background-color: white;
+}
+.fr-card.fr-card--no-arrow{
+  border-radius: 15px;
+  background-color: rgba(32, 32, 32, 0.644);
+  border: 2px solid black;
+}
+#bouton_responsable,#bouton_eleve{
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.titreCompte.fr-mb-2w{
+  display: none;
+}
+#titreLogin,#labelle_identifiant,#labelle_mdp{
+  color: white;
+}
+.fr-link.small.left-auto.fr-fi-arrow-right-line.fr-link--icon-right.fr-pr-0{
+  color: darkturquoise;
+}
+#bouton_valider{
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.fr-input{
+  background-color: rgba(32, 32, 32, 0.644) !important;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: unset !important;
+  color: white !important;
+}
+.showPwd{
+  background-color: transparent;
+  color: white !important;
+}
