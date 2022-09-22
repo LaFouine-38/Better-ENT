@@ -15,7 +15,7 @@ function addTemplate(/*type, */pseudo/*, password*/) {
     let newElement =
     `<div class="user" data-pseudo=${pseudo}>
         <span style="bottom: 100%;">&nbsp;${pseudo}</span>
-        <button id="activer" class="btn-profil">Se connecter</button>
+        <button id="activer" class="btn-profil" style="float: right;">Se connecter</button>
     </div>`
     container.innerHTML += newElement
 }

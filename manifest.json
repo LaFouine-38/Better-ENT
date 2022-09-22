@@ -29,7 +29,7 @@
     },
     {
       "matches": [
-        "https://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO?execution=*"
+        "https://educonnect.education.gouv.fr/*"
       ],
       "css": [
         "css/login.css"
