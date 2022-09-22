@@ -25,7 +25,7 @@ hr,
     background-color: rgba(0, 206, 209, 0.9) !important;
 }
 
-#activer {
+.connect-btn {
 
     background-color: transparent;
     float: right;
