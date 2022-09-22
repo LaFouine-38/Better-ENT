@@ -33,8 +33,7 @@
       ],
       "css": [
         "css/login.css"
-      ],
-      "js": ["scripts/connexion.js"]
+      ]
     },
     {
       "matches": [
