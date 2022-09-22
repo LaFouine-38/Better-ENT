@@ -15,6 +15,10 @@ h2 {
   font-size: 30px;
 }
 
+.typeSelect {
+
+}
+
 h3 {
   font-size: 20px;
 }
@@ -40,6 +44,7 @@ h3 {
 .input-profil {
   color: black;
   position: static;
+  border-radius: 5px;
 }
 
 .defilement {
