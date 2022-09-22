@@ -4,7 +4,7 @@
 }
 
 :root.desktop .tool:hover {
-    background-color: rgb(73, 73, 73) !important;
+    background-color: #262835 !important;
 }
 
 .user {
@@ -22,7 +22,7 @@ hr {
 
 hr,
 .toolRibbon {
-    background-color: rgba(0, 206, 209, 0.9) !important;
+    background-color: #14183a !important;
 }
 
 .connect-btn {
