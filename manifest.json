@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Extension ENT",
+  "name": "Beter ENT",
   "description": "Cette extension permet de moderniser l'apparence de l'ENT",
   "version": "1.0.0",
   "action": {
