@@ -20,7 +20,7 @@
    font-size: var(--font-size);
    line-height: 20px;
  }
- 
+
  :root body.loading {
    opacity: 0;
  }
