@@ -15,7 +15,17 @@ function addTemplate(/*type, */pseudo/*, password*/) {
     let newElement =
     `<div class="user" data-pseudo=${pseudo}>
         <span style="bottom: 100%;">&nbsp;${pseudo}</span>
-        <button id="activer" class="btn-profil">Se connecter</button>
+        <button class="btn-profil connect-btn">Se connecter</button>
     </div>`
     container.innerHTML += newElement
 }
+
+document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('delete-btn')) {
+        chrome.storage.local.get([`extEnt-${pseudo}`], (data) => {
+            chrome.runtime.sendMessage({ sender: "popup", action: "connexionInit", infos: {
+                type: data[`extEnt-${pseudo}`].type, pseudo: data[`extEnt-${pseudo}`].pseudo, password: data[`extEnt-${pseudo}`].password
+            }});
+        })
+    }
+});
