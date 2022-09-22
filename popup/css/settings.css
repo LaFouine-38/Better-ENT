@@ -4,8 +4,7 @@
 }
 
 body {
-  background-image: url("chrome-extension://__MSG_@@extension_id__/assets/legrandz.png") !important;
-  background-size: cover;
+  background-color: rgb(41, 40, 40);
 }
 
 h1 {
