@@ -211,7 +211,7 @@ main#screenreader-contenu > div.content-toolbar.content-toolbar--tabs.content-to
     border-bottom-right-radius: 30px;
     background-color: #222858 !important;
     margin-right: 10px;
-    border-color: #14183a !important;
+    border-color: white !important;
 }
 
 .tabs__button, .tabs__link {
