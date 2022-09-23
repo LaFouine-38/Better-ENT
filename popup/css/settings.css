@@ -23,6 +23,10 @@ h3 {
   bottom: 200px;
 }
 
+#barre{
+  bottom: 100px;
+}
+
 .btn-profil {
   background-color: rgba(0, 206, 209, 0.9);
   position: static;
@@ -38,9 +42,11 @@ h3 {
 }
 
 .input-profil {
+  height: 26px;
   color: black;
   position: static;
-  border-radius: 5;
+  border-radius: 5px;
+  border: 0;
 }
 
 .defilement {
