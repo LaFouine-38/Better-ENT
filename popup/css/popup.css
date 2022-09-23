@@ -23,7 +23,14 @@ hr {
 
 hr,
 .toolRibbon {
-    background-color: #14183a !important;
+    background-color: rgba(0, 206, 209, 0.9) !important;
+}
+
+.btn-profil{
+    background-color: rgba(0, 206, 209, 0.9);
+    color: white;
+    border-radius: 5px;
+    border: 0;
 }
 
 .connect-btn {
@@ -39,6 +46,6 @@ hr,
 }
 
 #activer:hover {
-    background-color: rgba(128, 128, 128, 0.793);
+    background-color: rgba(179, 198, 250, 20%);
     color: white;
 }

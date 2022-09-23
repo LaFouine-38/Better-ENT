@@ -44,7 +44,7 @@
 
 /* Common uBO styles */
 body {
-    background-color: #222858;
+    background-color: var(--surface-1);
     border: 0;
     box-sizing: border-box;
     color: var(--ink-1);
