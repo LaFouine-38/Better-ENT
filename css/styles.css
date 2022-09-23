@@ -192,10 +192,15 @@ div.col.col--full.col--xs-12.col--sm-9.col--xl-10 > a.btn.btn--as-link.text--rig
 
 /* cahier de texte -> prochainement -> barre de menu en haut */
 main#screenreader-contenu > div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons{
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #222858 !important;
     margin-right: 10px;
+    border-color: #14183a !important;
+}
+
+.tabs__button, .tabs__link {
+    color: white !important;
 }
 
 /* cahier de textes -> emploi du temps -> barre de menu */
