@@ -28,8 +28,13 @@ a[title="Aide"]{
 
 /* rubriques pages d'accueil (cases)*/
 .panel--outlined {
-    background-color: rgba(255, 255, 255, 0.7) !important;
+    background-color: #43497d !important;
     border-radius: 22.5px !important;
+    color: white;
+}
+
+.panel--outlined a {
+    color: #66d0dd !important;
 }
 
 /* travail fait (container) */
