@@ -144,9 +144,24 @@ ul#js_boite_reception > li.row.row--full.list-enhanced1__item:first-child {
 /* messagerie menu gauche (fck meluch) */
 div#menu_contenu.col.col--full.col--xs-12.col--sm-3.col--xl-2.app-layout-1__col.panel--bg-lightest.col--border {
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.9);
+    border-color: transparent;
+    background-color: #43497d;
+    color: white !important;
     margin: 10px
 
+}
+
+.jstree-default .jstree-wholerow-clicked, .jstree-default .jstree-wholerow-clicked.jstree-wholerow-hovered~.btn, .jstree-default .jstree-wholerow-clicked~.btn {
+    background-color: #7a82c1 !important;
+}
+
+.jstree-wholerow-hovered {
+    background-color: #7a82c1 !important;
+}
+
+.msg--neutral {
+    background-color: #43497d !important;
+    color: white !important;
 }
 
 /* messagerie menu a gauche (icones recu, envoyé, corbeille...) */
@@ -167,12 +182,12 @@ input.btn.btn--primary.js-afficherNouveauMessage[value="Rédiger un message"][ty
 
 /* messagerie barre de menu (partie haute: mess + btn rediger un msg) */
 div.content-toolbar.content-toolbar--title.content-toolbar--buttons {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid rgb(112, 111, 111);
+    background-color: #43497d !important;
+    border-bottom: 1px solid #ffffff;
 }
 /* messagerie barre de menu (partie basse: fonctions msg -> supprimer, trier, ranger...)*/
 div.panel.panel--no-margin.panel--naked.panel--bg-lightest {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #43497d !important;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     
