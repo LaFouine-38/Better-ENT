@@ -5,7 +5,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         }
         document.querySelector('#button-submit').click()
 
-        chrome.runtime.sendMessage({sender: "connexion2", tabId:request.tabId, infos: request.infos})
-    
+        chrome.runtime.sendMessage({sender: "connexion2", tabId:request.tabId, infos: request.infos})    
     }
 })
