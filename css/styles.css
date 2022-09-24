@@ -177,6 +177,7 @@ div#menu_contenu.col.col--full.col--xs-12.col--sm-3.col--xl-2.app-layout-1__col.
 }
 
 .jstree-wholerow-hovered {
+    transition: 0.3s;
     background-color: #7a82c1 !important;
 }
 
@@ -193,6 +194,17 @@ ul.jstree-container-ul.jstree-children.jstree-wholerow-ul.jstree-no-checkboxes.j
 /* messagerie menu a gauche ajouter un dossier */
 button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg[type="button"] {
     border-radius: 20px;
+    background-color: #43497d !important;
+    border-color: white;
+    color: white;
+}
+
+button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg[type="button"]:hover {
+    transition: 0.3s;
+    border-radius: 20px;
+    background-color: #7a82c1 !important;
+    border-color: white;
+    color: white;
 }
 
 button.burger.js-burger {
@@ -300,7 +312,7 @@ main#screenreader-contenu > div.content-toolbar.content-toolbar--tabs.content-to
 }
 
 /* cahier de textes -> emploi du temps -> barre de menu */
-div#test>div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {}
+/*div#test>div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {}*/
 
 
 
