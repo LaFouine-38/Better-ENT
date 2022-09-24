@@ -209,6 +209,7 @@ div.content-toolbar.content-toolbar--title.content-toolbar--buttons {
 
 .content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
     background-color: #222858 !important;
+}
 /* messagerie barre de menu (partie basse: fonctions msg -> supprimer, trier, ranger...)*/
 div.panel.panel--no-margin.panel--naked.panel--bg-lightest {
     background-color: #43497d !important;
