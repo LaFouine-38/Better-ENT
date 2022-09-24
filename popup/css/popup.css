@@ -34,8 +34,7 @@ hr,
 }
 
 .connect-btn {
-
-    background-color: transparent;
+    background-color: rgba(0, 206, 209, 0.9);
     float: right;
     border: 0;
     color: white;
