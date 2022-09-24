@@ -230,6 +230,17 @@ div.col.col--full.col--xs-12.col--sm-9.col--xl-10 > a.btn.btn--as-link.text--rig
     background-color: #14183a !important;
 }
 
+.scheduler__slot--break {
+    background-color: #14183a !important;
+    border-color: #14183a;
+    background-image: repeating-linear-gradient(45deg,rgb(255 255 255 / 14%),rgba(0,0,0,.15) 1px,transparent 2px,transparent 4px) !important;
+}
+
+.scheduler__slot.js-scheduler__day-slot {
+    background-color: #14183a !important;
+    border-color: #14183a;
+}
+
 /* cahier de texte -> prochainement -> barre de menu en haut */
 main#screenreader-contenu > div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons{
     border-bottom-left-radius: 0px;
