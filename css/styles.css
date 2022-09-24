@@ -26,11 +26,20 @@ a[title="Aide"]{
     right: 10px;
 }
 
+input[type="checkbox"] {
+    border-radius: 10px !important;
+}
+
 /* rubriques pages d'accueil (cases)*/
 .panel--outlined {
     background-color: #43497d !important;
     border-radius: 22.5px !important;
     color: white;
+    border-color: transparent !important;
+}
+
+hr.divider.divider--sm.divider--full-panel.divider--no-margin-top {
+    background-color: #ffffff4f !important;
 }
 
 .panel--outlined a {
@@ -43,11 +52,18 @@ a[title="Aide"]{
     background: linear-gradient(105deg, rgba(0, 0, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 36%, rgba(255, 255, 255, 0.6) 63%, rgba(255, 0, 0, 0.6) 100%);
     padding: 10px !important;
     border-radius: 15px; 
+    color: black !important;
+}
+
+div.divider, hr {
+    background-color: #ffffff4f;
 }
 
 /* devoir fait (énoncé) */
 .panel--success a {
-    color: blue
+    color: black !important;
+    font-weight: 100 !important;
+    text-decoration: underline;
 }
 
 /* titre page accueil row */
@@ -62,7 +78,7 @@ h2.h5-like {
 
 /* titre dans les rubriques page accueil (+matieres) */
 h3.h6-like {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 /* toutes les scrollbars */
