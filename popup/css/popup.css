@@ -34,7 +34,6 @@ hr,
 }
 
 .connect-btn {
-    background-color: rgba(0, 206, 209, 0.9);
     float: right;
     border: 0;
     color: white;
@@ -44,7 +43,7 @@ hr,
     cursor: pointer;
 }
 
-#activer:hover {
+.btn-profil:hover {
     background-color: rgba(179, 198, 250, 20%);
     color: white;
 }
