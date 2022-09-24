@@ -39,9 +39,19 @@ let requestStorage = {
 }
 
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
-    //FUTURE MAJ ? executescript pour pas avoir de problemes d'url avec co3
-    console.log(requestStorage)
+    if (tab.url.startsWith('https://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO?execution=') && tab.status == "loading"){
+        await chrome.scripting.insertCSS({
+            target: {tabId: tabId},
+            files: ["css/login.css"]
+        })
+    }
     if (tabId == requestStorage.tabId && tab.status == "complete") {
+        if (tab.url.startsWith('https://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO?execution=')){
+            await chrome.scripting.executeScript({
+                target: {tabId: tabId},
+                files: ["scripts/connection/connexion3.js"]
+            })
+        }
         if (requestStorage.sender == 'connexion1') {
             chrome.tabs.sendMessage(tabId, { sender: "connexionUrl", tabId: requestStorage.tabId, state: "connexion1", infos: requestStorage })
 
