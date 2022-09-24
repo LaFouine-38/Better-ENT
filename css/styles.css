@@ -26,6 +26,10 @@ a[title="Aide"]{
     right: 10px;
 }
 
+input[type="checkbox"] {
+    border-radius: 10px !important;
+}
+
 /* rubriques pages d'accueil (cases)*/
 .panel--outlined {
     background-color: #43497d !important;
@@ -74,7 +78,7 @@ h2.h5-like {
 
 /* titre dans les rubriques page accueil (+matieres) */
 h3.h6-like {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 /* toutes les scrollbars */
