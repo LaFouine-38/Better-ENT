@@ -1,11 +1,12 @@
 * {
-  color: white;
+  color: black;
   font-family: 'Nunito', sans-serif;
   user-select: none;
 }
 
 body {
-  background-color: rgb(27, 27, 35);
+  background-image: url("../../assets/legrandz.png");
+  background-size: cover;
 }
 
 h1 {
@@ -33,7 +34,7 @@ h3 {
   position: static;
   height: 28px;
   width: 150px;
-  border-color: black;
+  border-color: transparent;
   border-radius: 7px;
 }
 
