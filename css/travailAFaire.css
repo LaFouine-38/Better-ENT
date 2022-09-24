@@ -11,9 +11,14 @@ main#screenreader-contenu > div.content-filter {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-right: 10px;
+    background-color: #222858 !important;
 }
 
 /* sélécteur de matieres */
 select#matiere[name="matiere"].form__control.js-filtre-matiere {
     border-radius: 10px;
+}
+
+main#screenreader-contenu div.content-filter {
+    background-color: #222858 !important;
 }

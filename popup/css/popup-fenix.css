@@ -55,13 +55,12 @@
 
  hr {
    border: 0;
-   border-top: 1px solid var(--hr-ink);
+   border-top: 1px solid white;
    margin: 0;
    padding: 0;
  }
 
  #sticky {
-   background-color: var(--surface-1);
    position: sticky;
    top: 0;
    z-index: 100;

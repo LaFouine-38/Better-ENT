@@ -4,24 +4,27 @@
 }
 
 body {
-  background-image: url("chrome-extension://__MSG_@@extension_id__/assets/legrandz.png") !important;
-  background-size: cover;
+  background-color: rgb(27, 27, 35);
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 40pt;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 30pt;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 20pt;
 }
 
 #add {
   bottom: 200px;
+}
+
+#barre{
+  bottom: 100px;
 }
 
 .btn-profil {
@@ -39,8 +42,11 @@ h3 {
 }
 
 .input-profil {
+  height: 26px;
   color: black;
   position: static;
+  border-radius: 5px;
+  border: 0;
 }
 
 .defilement {

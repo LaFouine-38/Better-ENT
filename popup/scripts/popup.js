@@ -21,7 +21,8 @@ function addTemplate(/*type, */pseudo/*, password*/) {
 }
 
 document.addEventListener('click', function (e) {
-    if (e.target.classList.contains('delete-btn')) {
+    if (e.target.classList.contains('connect-btn')) {
+        const pseudo = e.target.parentNode.getAttribute('data-pseudo')
         chrome.storage.local.get([`extEnt-${pseudo}`], (data) => {
             chrome.runtime.sendMessage({ sender: "popup", action: "connexionInit", infos: {
                 type: data[`extEnt-${pseudo}`].type, pseudo: data[`extEnt-${pseudo}`].pseudo, password: data[`extEnt-${pseudo}`].password
