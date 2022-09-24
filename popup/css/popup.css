@@ -44,6 +44,5 @@ hr,
 }
 
 .btn-profil:hover {
-    background-color: rgba(179, 198, 250, 20%);
-    color: white;
+    color: rgb(0, 0, 0);
 }

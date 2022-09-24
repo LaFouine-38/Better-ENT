@@ -195,6 +195,42 @@ button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg[type="button
     border-radius: 20px;
 }
 
+button.burger.js-burger {
+    background-color: #43497d !important;
+    border-radius: 0px;
+    border-color: transparent;
+}
+
+button.burger.js-burger:hover {
+    transition: 0.3s;
+    border-radius: 20px !important;
+    transition-timing-function: ease-in-out;
+    background-color: #14183a !important;
+}
+
+button.burger.js-burger {
+    border-radius: 0px !important;
+}
+
+a.services-shortcut__link:hover {
+    transition: 0.3s;
+    border-radius: 20px !important;
+    transition-timing-function: ease-in-out;
+    background-color: #222858 !important;
+}
+
+li.services-shortcut__item.services-shortcut__item--current>.services-shortcut__link {
+    border-radius: 20px !important;
+}
+
+.header {
+    background-color: #43497d !important;
+}
+
+.bar {
+    background-color: #43497d !important;
+}
+
 /* messagerie menu de gauche btn rédiger un message*/
 input.btn.btn--primary.js-afficherNouveauMessage[value="Rédiger un message"][type="button"] {
     border-radius: 20px;
