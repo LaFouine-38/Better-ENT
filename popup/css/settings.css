@@ -1,6 +1,7 @@
 * {
   color: white;
   font-family: 'Nunito', sans-serif;
+  user-select: none;
 }
 
 body {
@@ -61,4 +62,12 @@ h3 {
 
 .profil-cree input:disabled {
   color: white;
+}
+
+.selectTheme {
+  height: 26px;
+  color: black;
+  position: static;
+  border-radius: 5px;
+  border: 0;
 }

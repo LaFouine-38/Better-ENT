@@ -13,7 +13,7 @@
 
 <body class="settings" id="body">
     <h1 style="text-align: center;"><strong>Param&egrave;tres</strong></h1>
-    <h2><strong>Ajouter un profil</strong></h2>
+    <h2><strong>Profils :</strong></h2>
     <p>(les identifiants que vous mettrez ne sont pas vérifiés)</p>
     <hr />
     <div class="profil-creation">
@@ -31,19 +31,19 @@
         <button id="add" class="btn-profil" style="float: right;">Créer</button>
         <p id="errorField"></p>
     </div>
-    <hr id="barre"/>
-    <h2><strong>Profils :</strong></h2>
-    <hr />
     <div id="allProfiles"></div>
-
-    
-
     </div>
     <hr />
-    <div>
-        <!-- <h2><strong>Configuration :</strong></h2> -->
-        <!-- <h3>Niveaux de flou du fond écran : <input title="Gère le taux de flou sur le fond d'écran" id="slider" type="range" min="0" max="100" value="50" /></h3> -->
+
+    <div style="margin-top: 100px;">
+        <h2>Thème :</h2>
+        <select id="selectThemeSelecter" name="theme" title="Choisissez votre thème" class="selectThemeSelecter" required>
+        <option value="0" class="selectTheme" selected disabled>Thème</option>
+        <option value="1" class="selectTheme">Sombre</option>
+        <option value="2" class="selectTheme">Clair</option>
     </div>
+
+
     <script src="./scripts/settings.js"></script>
 </body>
 
