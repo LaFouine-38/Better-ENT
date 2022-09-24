@@ -1,6 +1,7 @@
 * {
   color: white;
   font-family: 'Nunito', sans-serif;
+  user-select: none;
 }
 
 body {
@@ -47,6 +48,7 @@ h3 {
   position: static;
   border-radius: 5px;
   border: 0;
+  text-align: center;
 }
 
 .defilement {
@@ -61,4 +63,14 @@ h3 {
 
 .profil-cree input:disabled {
   color: white;
+}
+
+.selectTheme {
+  width: 100px;
+  text-align: center;
+  height: 26px;
+  color: black;
+  position: static;
+  border-radius: 5px;
+  border: 0;
 }
