@@ -8,10 +8,11 @@ main#screenreader-contenu > div.content-toolbar.content-toolbar--tabs.content-to
 
 /* barre de menu partie basse */
 main#screenreader-contenu > div.content-filter {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     margin-right: 10px;
     background-color: #222858 !important;
+    border-color: transparent !important;
 }
 
 /* sélécteur de matieres */

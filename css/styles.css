@@ -226,6 +226,10 @@ div.col.col--full.col--xs-12.col--sm-9.col--xl-10 > a.btn.btn--as-link.text--rig
     margin-right: 10px;
 }
 
+.content-filter {
+    background-color: #14183a !important;
+}
+
 /* cahier de texte -> prochainement -> barre de menu en haut */
 main#screenreader-contenu > div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons{
     border-bottom-left-radius: 0px;
