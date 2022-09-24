@@ -112,7 +112,8 @@ h3.h6-like {
 div.panel.panel--padding-xl>div.empty-state>p.empty-state__title {
     padding-top: 10px !important;
     padding-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
+    color: white;
+    background-color: #43497d !important;
     border-radius: 20px;
     width: 25%;
     position: absolute;
@@ -131,6 +132,7 @@ div.js-notices.js-global-notices-container.global-notices--panel.global-notices-
 /* msg info (msg delete apres 90j */
 div.js-notices.js-global-notices-container.global-notices--panel.global-notices--panel-no-background div.notices div.js-global-notices.js-notices div.msg.msg--NEUTRE.msg--neutral.js-notice {
     border-radius: 20px;
+    border-color: transparent !important;
 }
 
 /* cahier de textes fin de liste devoirs (voir plus...) */
@@ -177,8 +179,8 @@ div#menu_contenu.col.col--full.col--xs-12.col--sm-3.col--xl-2.app-layout-1__col.
 }
 
 .jstree-wholerow-hovered {
-    transition: 0.3s;
     background-color: #7a82c1 !important;
+    border-radius: 15px;
 }
 
 .msg--neutral {
@@ -251,7 +253,7 @@ input.btn.btn--primary.js-afficherNouveauMessage[value="Rédiger un message"][ty
 
 /* messagerie barre de menu (partie haute: mess + btn rediger un msg) */
 div.content-toolbar.content-toolbar--title.content-toolbar--buttons {
-    background-color: #43497d !important;
+    background-color: #222858 !important;
     border-bottom: 1px solid #ffffff;
 }
 
@@ -260,7 +262,7 @@ div.content-toolbar.content-toolbar--title.content-toolbar--buttons {
 }
 /* messagerie barre de menu (partie basse: fonctions msg -> supprimer, trier, ranger...)*/
 div.panel.panel--no-margin.panel--naked.panel--bg-lightest {
-    background-color: #43497d !important;
+    background-color: #222858 !important;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
