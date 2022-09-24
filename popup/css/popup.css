@@ -48,3 +48,7 @@ hr,
     background-color: rgba(179, 198, 250, 20%);
     color: white;
 }
+
+.theme {
+    text-align: center;
+}
