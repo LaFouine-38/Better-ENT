@@ -5,12 +5,12 @@
 
 
 html {
-	background-color: #14183a !important;
-    height               : 100%;
+    background-color: #14183a !important;
+    height: 100%;
     /* background-position-x: 240px;
     background-position-y: -30px; */
-    width                : 100%;
-    overflow-y           : overlay;
+    width: 100%;
+    overflow-y: overlay;
 }
 
 main#screenreader-contenu {
@@ -21,7 +21,7 @@ main#screenreader-contenu {
 }
 
 /* header icone aide */
-a[title="Aide"]{
+a[title="Aide"] {
     position: inherit;
     right: 10px;
 }
@@ -51,11 +51,12 @@ hr.divider.divider--sm.divider--full-panel.divider--no-margin-top {
     /* background-color: transparent; */
     background: linear-gradient(105deg, rgba(0, 0, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 36%, rgba(255, 255, 255, 0.6) 63%, rgba(255, 0, 0, 0.6) 100%);
     padding: 10px !important;
-    border-radius: 15px; 
+    border-radius: 15px;
     color: black !important;
 }
 
-div.divider, hr {
+div.divider,
+hr {
     background-color: #ffffff4f;
 }
 
@@ -91,7 +92,7 @@ h3.h6-like {
 /* fond */
 ::-webkit-scrollbar-track {
     background: transparent;
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
@@ -108,7 +109,7 @@ h3.h6-like {
 }
 
 /* aucun message */
-div.panel.panel--padding-xl > div.empty-state > p.empty-state__title {
+div.panel.panel--padding-xl>div.empty-state>p.empty-state__title {
     padding-top: 10px !important;
     padding-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -133,27 +134,30 @@ div.js-notices.js-global-notices-container.global-notices--panel.global-notices-
 }
 
 /* cahier de textes fin de liste devoirs (voir plus...) */
-main#screenreader-contenu > div.container > div.row > div.col--xs-12.col--md-6.js-taf__wrapper > div.text--center > a.btn.btn--sm.btn--primary.btn--pills{
+main#screenreader-contenu>div.container>div.row>div.col--xs-12.col--md-6.js-taf__wrapper>div.text--center>a.btn.btn--sm.btn--primary.btn--pills {
     margin-bottom: 50px;
 }
+
 /*cahier de textes boutons déclarer fait */
-a.btn.btn--sm.btn--secondary.js-async.js-taf__btn-marquer-fait-non-fait[title="Déclarer fait"]{
+a.btn.btn--sm.btn--secondary.js-async.js-taf__btn-marquer-fait-non-fait[title="Déclarer fait"] {
     border-radius: 20px;
 }
+
 /* cahier de texte pour le... */
-div.col.col--xs-4.text--center > p.p-like.slug.slug--xs.text--slate {
-    color:black
+div.col.col--xs-4.text--center>p.p-like.slug.slug--xs.text--slate {
+    color: black
 }
 
 /* boite de récéption (un message) */
-ul#js_boite_reception > li.row.row--full.list-enhanced1__item {
+ul#js_boite_reception>li.row.row--full.list-enhanced1__item {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 7px;
     margin-bottom: 5px;
     margin-right: 15px;
 }
+
 /* boite de reception premier message */
-ul#js_boite_reception > li.row.row--full.list-enhanced1__item:first-child {
+ul#js_boite_reception>li.row.row--full.list-enhanced1__item:first-child {
     margin-top: 10px;
 }
 
@@ -164,10 +168,11 @@ div#menu_contenu.col.col--full.col--xs-12.col--sm-3.col--xl-2.app-layout-1__col.
     background-color: #43497d;
     color: white !important;
     margin: 10px
-
 }
 
-.jstree-default .jstree-wholerow-clicked, .jstree-default .jstree-wholerow-clicked.jstree-wholerow-hovered~.btn, .jstree-default .jstree-wholerow-clicked~.btn {
+.jstree-default .jstree-wholerow-clicked,
+.jstree-default .jstree-wholerow-clicked.jstree-wholerow-hovered~.btn,
+.jstree-default .jstree-wholerow-clicked~.btn {
     background-color: #7a82c1 !important;
 }
 
@@ -181,17 +186,17 @@ div#menu_contenu.col.col--full.col--xs-12.col--sm-3.col--xl-2.app-layout-1__col.
 }
 
 /* messagerie menu a gauche (icones recu, envoyé, corbeille...) */
-ul.jstree-container-ul.jstree-children.jstree-wholerow-ul.jstree-no-checkboxes.jstree-no-dots[role="group"]{
+ul.jstree-container-ul.jstree-children.jstree-wholerow-ul.jstree-no-checkboxes.jstree-no-dots[role="group"] {
     margin-top: 10px;
 }
 
 /* messagerie menu a gauche ajouter un dossier */
-button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg[type="button"]{
+button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg[type="button"] {
     border-radius: 20px;
 }
 
 /* messagerie menu de gauche btn rédiger un message*/
-input.btn.btn--primary.js-afficherNouveauMessage[value="Rédiger un message"][type="button"]{
+input.btn.btn--primary.js-afficherNouveauMessage[value="Rédiger un message"][type="button"] {
     border-radius: 20px;
     margin-right: 20px;
 }
@@ -202,16 +207,12 @@ div.content-toolbar.content-toolbar--title.content-toolbar--buttons {
     border-bottom: 1px solid #ffffff;
 }
 
-.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
-    background-color: #222858 !important;
-}
-
 /* messagerie barre de menu (partie basse: fonctions msg -> supprimer, trier, ranger...)*/
 div.panel.panel--no-margin.panel--naked.panel--bg-lightest {
     background-color: #43497d !important;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    
+
 }
 
 /* messagerie -> trait pour séparer le message "oui les msg se suppriment apres 90 jours" et les messages (boite de réception) (oser pr l'instant) */
@@ -222,31 +223,26 @@ hr.divider.divider--no-margin {
 }
 
 /* messagerie barre de menu bouton engrenage parametres */
-div.col.col--full.col--xs-12.col--sm-9.col--xl-10 > a.btn.btn--as-link.text--right.pull-right{
+div.col.col--full.col--xs-12.col--sm-9.col--xl-10>a.btn.btn--as-link.text--right.pull-right {
     margin-right: 10px;
-}
-
-.content-filter {
-    background-color: #14183a !important;
 }
 
 /* cahier de texte -> prochainement -> barre de menu en haut */
-main#screenreader-contenu > div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons{
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+main#screenreader-contenu>div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     background-color: #222858 !important;
     margin-right: 10px;
-    border-color: transparent !important;
+    border-color: white !important;
 }
 
-.tabs__button, .tabs__link {
+.tabs__button,
+.tabs__link {
     color: white !important;
 }
 
 /* cahier de textes -> emploi du temps -> barre de menu */
-div#test > div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
-
-}
+div#test>div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {}
 
 
 
@@ -256,7 +252,7 @@ div#test > div.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
 } */
 
 /* cahier de texte -> emploi du temps (container jours) -> background */
-div.js-scheduler__current-view > div.row.row--full.bg--white {
+div.js-scheduler__current-view>div.row.row--full.bg--white {
     padding-bottom: 32px;
 }
 
@@ -271,3 +267,22 @@ div.js-scheduler__current-view > div.row.row--full.bg--white {
     width: 100%;
     left: 1rem;
 */
+
+/**/
+.score {
+    background-color: #14183a !important;
+    border-radius: 10px;
+    border: 0 !important;
+    width: 60px;
+    height: 35px;
+}
+
+ul.list--unstyled>li {
+    display: inline-flex !important;
+    flex-direction: column-reverse !important;
+}
+
+.content-toolbar.content-toolbar--title.content-toolbar--tabs.content-toolbar--buttons.fo-content-toolbar,
+.content-toolbar.content-toolbar--title.content-toolbar--tabs.content-toolbar--buttons {
+    border: 0;
+}
