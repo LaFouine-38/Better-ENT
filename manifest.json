@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Beter ENT",
+  "name": "Better ENT",
   "description": "Cette extension permet de moderniser l'apparence de l'ENT",
   "version": "1.0.0",
   "action": {
@@ -12,7 +12,7 @@
     "64": "assets/64x.png",
     "128": "assets/128x.png"
   },
-  "permissions": ["tabs", "activeTab", "storage"],
+  "permissions": ["tabs", "activeTab", "storage", "scripting"],
   "background": {
     "service_worker": "scripts/handlers/backgroundScriptInit.js"
   },
@@ -29,11 +29,13 @@
     },
     {
       "matches": [
-        "https://educonnect.education.gouv.fr/*"
+        "https://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO?execution=e1s1",
+        "https://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO?execution=e2s1"
       ],
       "css": [
         "css/login.css"
-      ]
+      ],
+      "js":["scripts/connection/connexion3.js"]
     },
     {
       "matches": [
@@ -42,8 +44,31 @@
       "css": [
         "css/travailAFaire.css"
       ]
+    },
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/"
+      ],
+      "js": [
+        "scripts/connection/connexion1.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://cas.ent.auvergnerhonealpes.fr/login?service=https%3A%2F%2Ffleming-isere.ent.auvergnerhonealpes.fr%2Fsg.do%3FPROC%3DIDENTIFICATION_FRONT"
+      ],
+      "js": [
+        "scripts/connection/connexion2.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://cas.ent.auvergnerhonealpes.fr/saml/SAMLAssertionConsumer"
+      ],
+      "js": [
+        "scripts/connection/connexion4.js"
+      ]
     }
-
   ],
   "web_accessible_resources": [
     {
