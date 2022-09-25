@@ -181,11 +181,57 @@ div#menu_contenu.col.col--full.col--xs-12.col--sm-3.col--xl-2.app-layout-1__col.
 .jstree-wholerow-hovered {
     background-color: #7a82c1 !important;
     border-radius: 15px;
+    border-color: transparent;
 }
 
 .msg--neutral {
     background-color: #43497d !important;
     color: white !important;
+}
+
+a[title="Se déconnecter"] {
+    border-radius: 0px !important;
+    background-color: #43497d !important;
+}
+
+a[title="Se déconnecter"]:hover {
+    transition: 0.3s;
+    background-color: #222858 !important;
+    border-radius: 20px !important;
+}
+
+a[title="Préférences"] {
+    border-radius: 0px !important;
+    background-color: #43497d !important;
+}
+
+a[title="Préférences"]:hover {
+    transition: 0.3s;
+    background-color: #222858 !important;
+    border-radius: 20px !important;
+}
+
+a[title="Consulter les séances"] {
+    color: #66d0dd !important;
+}
+
+p.text--right-sm {
+    color: #66d0dd !important;
+}
+
+p.text--right-sm:hover {
+    transition: 0.3s;
+    color: #ffffff !important;
+}
+
+a[title="Consulter les séances"]:hover {
+    transition: 0.3s;
+    color: white !important;
+}
+
+h1.h5-like.bar__sitename:hover {
+    background-color: #43497d !important;
+    border-radius: 0px !important;
 }
 
 /* messagerie menu a gauche (icones recu, envoyé, corbeille...) */
