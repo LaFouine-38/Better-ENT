@@ -355,7 +355,10 @@ main#screenreader-contenu > div.content-toolbar.content-toolbar--tabs.content-to
 }
 
 .tabs__button,
-.tabs__link {
+.tabs__link,
+.panel.panel--no-margin,
+.list.list--unstyled.list--inlined.list--spaced-sm,
+.text--size-xs{
     color: white !important;
 }
 
