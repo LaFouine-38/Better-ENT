@@ -1,3 +1,6 @@
+* {
+    user-select: none;
+}
 
 #hostname {
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
@@ -5,14 +8,24 @@
 }
 
 :root.desktop .tool:hover {
-    background-color: #3a3c4e !important;
+    background-color: rgba(59, 61, 79, 0.5) !important;
 }
 
 .user {
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
     text-align: left;
     font-size: 16px;
+}
+
+div#users>.user>span {
     color: white !important;
+}
+
+div#users>.user>span:hover {
+    transition: 0.3s;
+    border-radius: 5px;
+    color: rgb(0, 0, 0) !important;
+    background-color: rgba(0, 206, 209, 0.5);
 }
 
 hr {
@@ -24,22 +37,21 @@ hr {
 
 hr,
 .toolRibbon {
-    background-color: rgba(0, 206, 209, 0.9) !important;
+    background-color: rgba(0, 206, 209, 0.5) !important;
 }
 
-.btn-profil{
-    background-color: rgba(0, 206, 209, 0.9);
+.btn-profil {
     color: white;
+    background-color: rgba(0, 206, 209, 0.5);
     border-radius: 5px;
     border: 0;
 }
 
 .connect-btn {
-    float: left;
-    &
+    float: right;
     border: 0;
     color: white;
-    left: 100%;
+    left: 0%;
     font-size: 16px;
     transition-duration: 0.3s;
     cursor: pointer;
