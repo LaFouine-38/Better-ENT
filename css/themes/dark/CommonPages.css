@@ -15,12 +15,57 @@ button.burger {
     transition: 0.3s;
     background-color: var(--blue) !important;
     border-radius: 0px;
+    outline-style: none !important;
 }
 
 button.burger:hover {
     transition: 0.3s;
     border-radius: 20px;
     background-color: #222858 !important;
+    outline-style: none !important;
+}
+
+/* Boutton Mes accès en haut a droite */
+button.btn.btn--inverted.dropdown__toggle--light.dropdown__toggle.js-dropdown__toggle {
+    transition: 0.3s;
+    background-color: var(--blue) !important;
+    border-radius: 0px !important;
+    outline-style: none !important;
+}
+
+button.btn.btn--inverted.dropdown__toggle--light.dropdown__toggle.js-dropdown__toggle:hover {
+    transition: 0.3s;
+    border-radius: 20px !important;
+    background-color: #222858 !important;
+    outline-style: none !important;
+}
+
+button.btn.btn--inverted.dropdown__toggle--light.dropdown__toggle.js-dropdown__toggle.active {
+    transition: 0.3s;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    background-color: #222858 !important;
+    outline-style: none !important;
+}
+
+button.btn.btn--inverted.dropdown__toggle--light.dropdown__toggle.js-dropdown__toggle.active:hover {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    background-color: #222858 !important;
+    outline-style: none !important;
+}
+
+/* Div quand Mes Accès appuyé */
+.dropdown__content.js-dropdown__content {
+    transition: 0.3s;
+    background-color: var(--blue) !important;
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+li.dropdown__item.js-dropdown__item:hover {
+    transition: 0.3s;
+    border-radius: 20px;
 }
 
 /* Barre College Alexandre Fleming, Mes accèss, cadenas, aide */
@@ -30,20 +75,24 @@ button.burger:hover {
 
 .bar {
     background-color: var(--blue) !important;
+    outline-style: none !important;
 }
 
 /* Menu navigation de gauche */
 li.services-shortcut__item.services-shortcut__item--current>.services-shortcut__link {
     border-radius: 20px !important;
     background-color: #222858 !important;
+    outline-style: none !important;
 }
 
 li.services-shortcut__item>a {
     border-radius: 0px !important;
+    outline-style: none !important;
 }
 
 li.services-shortcut__item>a:hover {
     transition: 0.3s;
     background-color: #222858 !important;
     border-radius: 20px !important;
+    outline-style: none !important;
 }
