@@ -1,0 +1,8 @@
+html {
+    background-color: #14183a !important;
+    height: 100%;
+    /* background-position-x: 240px;
+    background-position-y: -30px; */
+    width: 100%;
+    overflow-y: overlay;
+}

@@ -22,9 +22,9 @@
       "matches": [
         "https://fleming-isere.ent.auvergnerhonealpes.fr/*"
       ],
-      "css": [
+      /*"css": [
         "css/styles.css"
-      ],
+      ],*/
       "js": ["scripts/emploiDuTemps.js", "scripts/handlers/requestHandler.js"
       ]
     },
@@ -58,6 +58,15 @@
       ],
       "js": [
         "scripts/connection/connexion4.js"
+      ]
+    },
+
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL"
+      ],
+      "css": [
+        "css/pages/accueil.css"
       ]
     }
   ],
