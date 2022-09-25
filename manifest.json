@@ -63,6 +63,7 @@
 
 
 
+
     {
       "matches": [
         "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL"
@@ -70,7 +71,8 @@
       "css": [
         "css/themes/dark/pages/accueil.css", "css/themes/dark/CommonPages.css"
       ]
-    },
+    }, {"matches": ["https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL&ACTION=VALIDER"],"css": ["css/themes/dark/pages/accueil.css", "css/themes/dark/CommonPages.css"]},
+    
     {
       "matches": [
         "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=MESSAGERIE"
@@ -79,6 +81,9 @@
         "css/themes/dark/pages/messages.css", "css/themes/dark/CommonPages.css"
       ]
     }
+
+
+    
   ],
   "web_accessible_resources": [
     {

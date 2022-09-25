@@ -55,8 +55,7 @@ hr.divider.divider--sm.divider--full-panel.divider--no-margin-top {
     color: black !important;
 }
 
-div.divider,
-hr {
+div.divider, hr {
     background-color: #ffffff4f;
 }
 
