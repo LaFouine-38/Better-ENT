@@ -61,12 +61,22 @@
       ]
     },
 
+
+
     {
       "matches": [
         "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL"
       ],
       "css": [
-        "css/pages/accueil.css"
+        "css/themes/dark/pages/accueil.css", "css/themes/dark/CommonPages.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=MESSAGERIE"
+      ],
+      "css": [
+        "css/themes/dark/pages/messages.css", "css/themes/dark/CommonPages.css"
       ]
     }
   ],
