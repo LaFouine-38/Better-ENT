@@ -12,6 +12,7 @@
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
     text-align: left;
     font-size: 16px;
+    color: white !important;
 }
 
 hr {
@@ -34,7 +35,8 @@ hr,
 }
 
 .connect-btn {
-    float: right;
+    float: left;
+    &
     border: 0;
     color: white;
     left: 100%;
