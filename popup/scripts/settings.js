@@ -2,10 +2,8 @@ const add = document.querySelector("#add")
 const container = document.querySelector("#allProfiles")
 window.onload = displayProfiles()
 function displayProfiles() {
-    if (container.hasChildNodes()) {
-        container.childNodes.forEach(e =>
-            e.remove())
-    }
+    document.querySelectorAll('.profil-cree').forEach(e => e.remove())
+        
     chrome.storage.local.get(null, (data) => {
         Object.keys(data).forEach(elementKey => {
             if (elementKey.startsWith('extEnt-')) {
@@ -16,13 +14,12 @@ function displayProfiles() {
 
 }
 
+
 add.addEventListener('click', (e) => {
     const pseudo = document.querySelector("#pseudo").value
     const password = document.querySelector("#password").value
     const type = document.querySelector("#typeSelect").options[document.querySelector("#typeSelect").selectedIndex].text
     createAccount(type, pseudo, password)
-    //voir pour reset le formulaire
-
 
 })
 
@@ -30,21 +27,52 @@ add.addEventListener('click', (e) => {
 document.addEventListener('click', function (e) {
     if (e.target.classList.contains('delete-btn')) {
         e.target.parentNode.remove()
-        chrome.storage.local.remove(`extEnt-${e.target.getAttribute('data-pseudo')}`, (e) => {
+            chrome.storage.local.remove(`extEnt-${e.target.getAttribute('data-pseudo')}`, (e) => {
         })
     }
     if (e.target.classList.contains('edit-btn') && !(e.target.classList.contains('cancel-btn'))) {
         initEdition(e)
     } else if (e.target.classList.contains('cancel-btn') && !(e.target.classList.contains('edit-btn'))) {
         endingEdition(e)
+        displayProfiles()
     }
     if (e.target.classList.contains('save-btn')) {
         editProfil(e)
         endingEdition(e)
     }
+    if (e.target.classList.contains('password') && e.target.disabled !== true){
+        e.target.value = ""
+    }
 });
 
+document.addEventListener('focusout', (e) => {
+    if (e.target.classList.contains('password') && e.target.value == "" && e.target.disabled !== true){
+        chrome.storage.local.get([`extEnt-${e.target.parentNode.getAttribute('data-pseudo')}`], (data) => {
+            if (typeof data[`extEnt-${e.target.parentNode.getAttribute('data-pseudo')}`] !== 'undefined') {
+                const profil = data[`extEnt-${e.target.parentNode.getAttribute('data-pseudo')}`]
+                e.target.value = profil.password.split('').map(e => e = "*").join('')
+            }
+        })
+    }
+})
+
+
 function addTemplate(type, pseudo, password) {
+    let finished = false
+    let decrypted = password.split('')
+    for(let i = 0; i < password.length; i+=pseudo.length){
+        if (finished){
+            break
+        }
+        for (let e = 0; e < pseudo.length; e++){
+            if (!password[i+e]){
+                let finished = true
+                break
+            }
+            let textCharCode = password[i+e].charCodeAt(0)
+            decrypted[i+e] = String.fromCharCode(textCharCode-pseudo[e].charCodeAt(0))
+        }
+    }
     let newElement =
         `<div data-type="${type}" data-pseudo="${pseudo}" data-password="${password}" class="profil profil-cree">
         &nbsp;
@@ -54,9 +82,9 @@ function addTemplate(type, pseudo, password) {
             <option value="2" class="input-profil" ${type == "Parent" ? "selected" : ""}>Parent</option>
         </select>
         &nbsp;
-        <input class="pseudo input-profil" type="text" value="${pseudo}" required disabled=true />
+        <input class="pseudo input-profil" type="text" value="${pseudo}" required disabled=true>
         &nbsp;
-        <input class="password input-profil" type="password" value="${password}" required disabled=true/>
+        <input class="password input-profil" type="password" value="${decrypted.map(e => e = "*").join('')}" required disabled=true/>
         <button data-pseudo="${pseudo}" class="btn-profil delete-btn" style="float: right;">Supprimer le profil</button>
         <button data-pseudo="${pseudo}" class="btn-profil edit-btn" style="float: right;">Modifier le profil</button>        
     </div>`
@@ -73,10 +101,26 @@ function createAccount(type, pseudo, password) {
         return errorField.innerText = "Pseudo incorrect, veulliez respecter le format suivant p.nom"
     }
 
+    let finished = false
+    let encrypted = password.split('')
+    for(let i = 0; i < pseudo.length; i+=pseudo.length){
+        if (finished){
+            break
+        }
+        for (let e = 0; e < pseudo.length; e++){
+            if (!password[i+e]){
+                let finished = true
+                break
+            }
+            let textCharCode = password[i+e].charCodeAt(0)
+            encrypted[i+e] = String.fromCharCode(pseudo[e].charCodeAt(0)+textCharCode)
+        }
+    }
+
     const newAccount = {
         type: type,
         pseudo: pseudo,
-        password: password
+        password: encrypted.join('')
     }
 
     chrome.storage.local.get([`extEnt-${pseudo}`], (data) => {
@@ -143,22 +187,66 @@ function updateProfilInStorage(keyPseudo, newType, newPseudo, newPassword) {
     chrome.storage.local.get([`extEnt-${keyPseudo}`], (data) => {
         if (typeof data[`extEnt-${keyPseudo}`] !== 'undefined') {
             const profil = data[`extEnt-${keyPseudo}`]
-            const updateAccount = {
+            let finished = false
+            let decrypted = profil.password.split('')
+            for(let i = 0; i < profil.password.length; i+=profil.pseudo.length){
+                if (finished){
+                    break
+                }
+                for (let e = 0; e < profil.pseudo.length; e++){
+                    if (!profil.password[i+e]){
+                        let finished = true
+                        break
+                    }
+                    let textCharCode = profil.password[i+e].charCodeAt(0)
+                    decrypted[i+e] = String.fromCharCode(textCharCode-profil.pseudo[e].charCodeAt(0))
+                }
+            }
+            let updateAccount = {
                 type: profil.type,
                 pseudo: profil.pseudo,
-                password: profil.password,
+                password: decrypted.join(''),
             }
             if (newType) {
                 updateAccount.type = newType
             }
-            if (newPassword) {
-                updateAccount.password = newPassword
-            }
             if (newPseudo) {
                 updateAccount.pseudo = newPseudo
             }
+            if (newPassword) {
+                let onlyStars = true
+                for (char of newPassword){
+                    console.log(char)
+                    if (char !== "*" || newPassword.length !== updateAccount.password.length){
+                        onlyStars = false
+                        break
+                    }
+                }
+                if (!onlyStars){
+                    updateAccount.password = newPassword   
+                }
+            }
+            finished = false
+            let encrypted = updateAccount.password.split('')
+            for(let i = 0; i < updateAccount.password.length; i+=updateAccount.pseudo.length){
+                if (finished){
+                    break
+                }
+                for (let e = 0; e < updateAccount.pseudo.length; e++){
+                    if (!updateAccount.password[i+e]){
+                        let finished = true
+                        break
+                    }
+                    let textCharCode = updateAccount.password[i+e].charCodeAt(0)
+                    encrypted[i+e] = String.fromCharCode(updateAccount.pseudo[e].charCodeAt(0)+textCharCode)
+                }
+            }
+            updateAccount.password = encrypted.join('')
+
             chrome.storage.local.remove([`extEnt-${keyPseudo}`])
             chrome.storage.local.set({ [`extEnt-${updateAccount.pseudo}`]: updateAccount })
         }
+        displayProfiles()
     })
 }
+
