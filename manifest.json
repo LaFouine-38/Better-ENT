@@ -66,7 +66,7 @@
 
     {
       "matches": [
-        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL"
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL*"
       ],
       "css": [
         "css/themes/dark/pages/accueil.css"
@@ -75,7 +75,7 @@
     
     {
       "matches": [
-        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=MESSAGERIE"
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=MESSAGERIE*"
       ],
       "css": [
         "css/themes/dark/pages/messages.css"

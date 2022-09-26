@@ -44,3 +44,30 @@ button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg:hover {
     background-color: var(--blue) !important; }
 .msg.msg--NEUTRE.msg--neutral.js-notice a {
     color: var(--light-blue) !important; }
+
+/* Div Ajouter un dossier */
+.modal__body.js-modal__body {
+    color: white !important;
+    font-weight: 200;
+    background-color: var(--blue) !important; }
+button.btn.btn--warn.js-btn--warn {
+    color: white !important;
+    border-radius: 20px !important;
+    background-color: rgb(168, 31, 31) !important; }
+button.btn.btn--warn.js-btn--warn:hover {
+    color: white !important;
+    border-radius: 20px !important;
+    border-color: transparent !important;
+    background-color: rgb(168, 31, 31) !important; }
+button.btn.btn--primary.js-valider-ajouter-dossier {
+    transition: 0.3s;
+    border-radius: 20px !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+button.btn.btn--primary.js-valider-ajouter-dossier:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    background-color: var(--hover-button) !important; }
+input#LIBELLE_DOSSIER {
+    background-color: var(--blue) !important;
+    color: white !important; }
