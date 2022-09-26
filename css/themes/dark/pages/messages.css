@@ -12,3 +12,18 @@ div#menu_contenu {
 .panel.panel--no-margin.panel--naked.panel--bg-lightest {
     background-color: var(--blue);
 }
+
+.jstree-wholerow.jstree-wholerow-clicked {
+    background-color: #222858 !important;
+    border-radius: 20px !important;
+}
+
+.jstree-wholerow-ul>li>a {
+    color: white !important;
+}
+
+.jstree-wholerow:hover {
+    transition: 0.3s !important;
+    border-radius: 20px !important;
+    background-color: #222858 !important;
+}
