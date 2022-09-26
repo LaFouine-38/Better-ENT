@@ -56,14 +56,22 @@ button.btn.btn--inverted.dropdown__toggle--light.dropdown__toggle.js-dropdown__t
 }
 
 /* Div quand Mes Accès appuyé */
-.dropdown__content.js-dropdown__content {
+.dropdown__content.js-dropdown__content a {
     transition: 0.3s;
+    font-weight: 100 !important;
+    color: white !important;
     background-color: var(--blue) !important;
+}
+
+.dropdown__content.js-dropdown__content {
+    background-color: var(--blue) !important;
+    border-color: transparent !important;
     border-bottom-right-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
 }
 
-li.dropdown__item.js-dropdown__item:hover {
+li.dropdown__item.js-dropdown__item a:hover {
+    background-color: #222858 !important;
     transition: 0.3s;
     border-radius: 20px;
 }
