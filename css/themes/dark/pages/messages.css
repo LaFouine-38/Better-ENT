@@ -1,29 +1,46 @@
 * {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C;}
 
+/* Panel */
 div#menu_contenu {
     background-color: var(--blue);
-    border-color: transparent;
-}
-
+    border-color: transparent; }
 .content-toolbar.content-toolbar--title.content-toolbar--buttons {
-    background-color: var(--blue) !important;
-}
-
+    background-color: var(--blue) !important; }
 .panel.panel--no-margin.panel--naked.panel--bg-lightest {
-    background-color: var(--blue);
-}
+    background-color: var(--blue); }
 
+/* Bouttons reçus, envoyés, brouillons, corbeille, archives... à gauche */
 .jstree-wholerow.jstree-wholerow-clicked {
     background-color: #222858 !important;
-    border-radius: 20px !important;
-}
-
+    border: transparent;
+    border-radius: 20px !important; }
 .jstree-wholerow-ul>li>a {
-    color: white !important;
-}
-
-.jstree-wholerow:hover {
-    transition: 0.3s !important;
+    color: white !important; }
+.jstree-wholerow-hovered {
+    transition: 0.3s;
     border-radius: 20px !important;
-    background-color: #222858 !important;
-}
+    background-color: #222858 !important; }
+.jstree-wholerow {
+    border-radius: 20px;
+    border: transparent !important; }
+
+/* Boutton ajouter un dossier */
+button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg {
+    border-radius: 20px !important;
+    color: white !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    border-radius: 20px !important;
+    background-color: #222858 !important; }
+
+/* Panneau renseigner adresse electronique et celui d'en dessous */
+.msg.msg--NEUTRE.msg--neutral.js-notice {
+    border-radius: 20px !important;
+    border-color: transparent;
+    color: white !important;
+    background-color: var(--blue) !important; }
+.msg.msg--NEUTRE.msg--neutral.js-notice a {
+    color: var(--light-blue) !important; }
