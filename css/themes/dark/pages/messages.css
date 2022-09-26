@@ -1,4 +1,4 @@
-* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C;}
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;}
 
 /* Panel */
 div#menu_contenu {
@@ -11,7 +11,7 @@ div#menu_contenu {
 
 /* Bouttons reçus, envoyés, brouillons, corbeille, archives... à gauche */
 .jstree-wholerow.jstree-wholerow-clicked {
-    background-color: #222858 !important;
+    background-color: var(--hover-button) !important;
     border: transparent;
     border-radius: 20px !important; }
 .jstree-wholerow-ul>li>a {
@@ -19,7 +19,7 @@ div#menu_contenu {
 .jstree-wholerow-hovered {
     transition: 0.3s;
     border-radius: 20px !important;
-    background-color: #222858 !important; }
+    background-color: var(--hover-button) !important; }
 .jstree-wholerow {
     border-radius: 20px;
     border: transparent !important; }
@@ -34,7 +34,7 @@ button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg:hover {
     transition: 0.3s;
     border-color: transparent !important;
     border-radius: 20px !important;
-    background-color: #222858 !important; }
+    background-color: var(--hover-button) !important; }
 
 /* Panneau renseigner adresse electronique et celui d'en dessous */
 .msg.msg--NEUTRE.msg--neutral.js-notice {

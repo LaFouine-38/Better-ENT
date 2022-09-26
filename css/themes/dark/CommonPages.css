@@ -1,11 +1,10 @@
-* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C;} /* Importer les couleurs */
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;} /* Importer les couleurs */
 
 html {
     background-color: var(--dark-blue) !important;
     height: 100%;
     width: 100%;
-    overflow-y: overlay;
-}
+    overflow-y: overlay; }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-track { background: transparent; box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); border-radius: 10px; } ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, blue 33%, white 33%, white 66%, red 66%); border-radius: 10px; } ::-webkit-scrollbar-thumb:hover { background: linear-gradient(to bottom, rgb(0, 0, 140) 33%, rgb(140, 140, 140) 33%, rgb(140, 140, 140) 66%, rgb(140, 0, 0) 66%); border-radius: 10px; }
@@ -15,92 +14,69 @@ button.burger {
     transition: 0.3s;
     background-color: var(--blue) !important;
     border-radius: 0px;
-    outline-style: none !important;
-}
-
+    outline-style: none !important; }
 button.burger:hover {
     transition: 0.3s;
     border-radius: 20px;
-    background-color: #222858 !important;
-    outline-style: none !important;
-}
+    background-color: var(--hover-button) !important;
+    outline-style: none !important; }
 
 /* Boutton Mes accès en haut a droite */
 button.btn.btn--inverted.dropdown__toggle--light.dropdown__toggle.js-dropdown__toggle {
     transition: 0.3s;
     background-color: var(--blue) !important;
     border-radius: 0px !important;
-    outline-style: none !important;
-}
-
+    outline-style: none !important; }
 button.btn.btn--inverted.dropdown__toggle--light.dropdown__toggle.js-dropdown__toggle:hover {
     transition: 0.3s;
     border-radius: 20px !important;
-    background-color: #222858 !important;
-    outline-style: none !important;
-}
-
+    background-color: var(--hover-button) !important;
+    outline-style: none !important; }
 button.btn.btn--inverted.dropdown__toggle--light.dropdown__toggle.js-dropdown__toggle.active {
     transition: 0.3s;
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
-    background-color: #222858 !important;
-    outline-style: none !important;
-}
-
+    background-color: var(--hover-button) !important;
+    outline-style: none !important; }
 button.btn.btn--inverted.dropdown__toggle--light.dropdown__toggle.js-dropdown__toggle.active:hover {
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
-    background-color: #222858 !important;
-    outline-style: none !important;
-}
+    background-color: var(--hover-button) !important;
+    outline-style: none !important; }
 
 /* Div quand Mes Accès appuyé */
 .dropdown__content.js-dropdown__content a {
     transition: 0.3s;
     font-weight: 100 !important;
     color: white !important;
-    background-color: var(--blue) !important;
-}
-
+    background-color: var(--blue) !important; }
 .dropdown__content.js-dropdown__content {
     background-color: var(--blue) !important;
     border-color: transparent !important;
     border-bottom-right-radius: 20px !important;
-    border-bottom-left-radius: 20px !important;
-}
-
+    border-bottom-left-radius: 20px !important; }
 li.dropdown__item.js-dropdown__item a:hover {
-    background-color: #222858 !important;
+    background-color: var(--hover-button) !important;
     transition: 0.3s;
-    border-radius: 20px;
-}
+    border-radius: 20px; }
 
 /* Barre College Alexandre Fleming, Mes accèss, cadenas, aide */
 .header {
-    background-color: var(--blue) !important;
-}
-
+    background-color: var(--blue) !important; }
 .bar {
     background-color: var(--blue) !important;
-    outline-style: none !important;
-}
+    outline-style: none !important; }
 
 /* Menu navigation de gauche */
 li.services-shortcut__item.services-shortcut__item--current>.services-shortcut__link {
     border-radius: 20px !important;
-    background-color: #222858 !important;
-    outline-style: none !important;
-}
-
+    background-color: var(--hover-button) !important;
+    outline-style: none !important; }
 li.services-shortcut__item>a {
     border-radius: 0px !important;
-    outline-style: none !important;
-}
-
+    outline-style: none !important; }
 li.services-shortcut__item>a:hover {
     transition: 0.3s;
-    background-color: #222858 !important;
+    background-color: var(--hover-button) !important;
     border-radius: 20px !important;
-    outline-style: none !important;
-}
+    outline-style: none !important; }
