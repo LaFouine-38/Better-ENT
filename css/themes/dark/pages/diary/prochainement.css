@@ -1,6 +1,6 @@
 * {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;}
 
-.panel.panel--outlined {
+div.panel--outlined {
     border-radius: 20px !important;
     background-color: var(--blue) !important;
 }
