@@ -52,9 +52,11 @@ button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg:hover {
     background-color: var(--blue) !important; }
 button.btn.btn--warn.js-btn--warn {
     color: white !important;
+    background-color: transparent;
     border-radius: 20px !important;
-    background-color: rgb(168, 31, 31) !important; }
+    border-color: rgb(168, 31, 31) !important; }
 button.btn.btn--warn.js-btn--warn:hover {
+    transition: 0.3s !important;
     color: white !important;
     border-radius: 20px !important;
     border-color: transparent !important;
@@ -68,6 +70,32 @@ button.btn.btn--primary.js-valider-ajouter-dossier:hover {
     transition: 0.3s;
     border-color: transparent !important;
     background-color: var(--hover-button) !important; }
-input#LIBELLE_DOSSIER {
+input#LIBELLE_DOSSIER { 
     background-color: var(--blue) !important;
     color: white !important; }
+
+/* Div Supprimer le dossier */
+button.btn.btn--primary.js-confirm-suppr-dossier {
+    transition: 0.3s;
+    border-radius: 20px !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+button.btn.btn--primary.js-confirm-suppr-dossier:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    background-color: var(--hover-button) !important; }
+
+/* 3 ptits points pour delete un dossier */
+ul.dropdown__list {
+    border-radius: 0px !important; }
+ul.dropdown__list>li>button {
+    color: white !important;
+    border-radius: 0px !important;
+    border-color: 0px !important;
+    background-color: var(--blue) !important; }
+ul.dropdown__list>li>button:hover {
+    transition: 0.3s;
+    color: white !important;
+    border-radius: 20px !important;
+    border-color: transparent !important;
+    background-color: var(--hover-button) !important; }
