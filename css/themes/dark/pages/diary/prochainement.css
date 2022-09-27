@@ -8,8 +8,20 @@ div.panel--outlined {
     color: white !important;
     border-radius: 20px !important;
     background-color: var(--blue) !important;
-}
+    border-color: transparent !important; }
 
 /* Div bouttons en haut : Prochainement, Emploi du temps, Travail à faire, Classeur */
 .content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
     background-color: var(--blue) !important; }
+
+/* Bouttons Déclarer fait à droite */
+.col.col--xs-4.text--center a {
+    border-radius: 20px !important;
+    color: white !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+.col.col--xs-4.text--center a:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    border-radius: 20px !important;
+    background-color: var(--hover-button) !important; }
