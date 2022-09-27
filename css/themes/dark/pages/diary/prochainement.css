@@ -1,6 +1,15 @@
 * {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;}
 
+body {
+    color: white !important; }
+
+/* Panels */
 div.panel--outlined {
+    color: white !important;
     border-radius: 20px !important;
     background-color: var(--blue) !important;
 }
+
+/* Div bouttons en haut : Prochainement, Emploi du temps, Travail à faire, Classeur */
+.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
+    background-color: var(--blue) !important; }

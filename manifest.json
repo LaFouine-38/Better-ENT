@@ -87,7 +87,7 @@
         "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CLASSEUR_PEDA&ACTION=AFFICHER_ELEVES_ACCUEIL*"
       ],
       "css": [
-        "css/themes/dark/pages/messages.css"
+        "css/themes/dark/pages/diary/prochainement.css"
       ]
     }
 

@@ -1,5 +1,9 @@
 * {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;}
 
+body {
+    color: white !important;
+}
+
 /* Panel */
 div#menu_contenu {
     background-color: var(--blue);

@@ -80,3 +80,11 @@ li.services-shortcut__item>a:hover {
     background-color: var(--hover-button) !important;
     border-radius: 20px !important;
     outline-style: none !important; }
+
+/* hover a */
+.container a {
+    transition: 0.3s;
+    color: #006dcc !important; }
+.container a:hover {
+    transition: 0.3s;
+    color: var(--light-blue) !important; }
