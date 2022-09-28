@@ -35,3 +35,16 @@
     background-color: white !important;
     outline: 1px solid white !important;
 }
+
+/* Cours */
+.scheduler__card--session-past>* {
+    opacity: 0.65 !important;
+}
+
+.scheduler__card-link {
+    background-color: var(--dark-blue) !important;
+}
+
+.scheduler__card-link * {
+    color: white !important;
+}
