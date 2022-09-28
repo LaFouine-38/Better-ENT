@@ -20,3 +20,18 @@
 .scheduler__card--session-past {
     background-color: var(--dark-blue) !important;
 }
+
+.scheduler__slot--break {
+    background-color: var(--dark-blue) !important;
+    background-image: repeating-linear-gradient(45deg,rgba(138, 138, 138, 0.15),rgba(138, 138, 138, 0.15) 1px,transparent 2px,transparent 4px) !important;
+}
+
+.scheduler__slot--today {
+    background-color: var(--dark-blue) !important;
+}
+
+/* Time marker */
+.scheduler__time-marker-current-day, .scheduler__time-marker-slot {
+    background-color: white !important;
+    outline: 1px solid white !important;
+}
