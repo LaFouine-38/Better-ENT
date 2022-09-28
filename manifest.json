@@ -89,6 +89,15 @@
       "css": [
         "css/themes/dark/pages/diary/prochainement.css"
       ]
+    },
+
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CDT_AFFICHAGE*"
+      ],
+      "css": [
+        "css/themes/dark/pages/diary/edt.css"
+      ]
     }
 
 

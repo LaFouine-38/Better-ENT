@@ -1,0 +1,22 @@
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;} /* Importer les couleurs */
+
+/* Background EDT */
+.scheduler__days {
+    background-color: var(--dark-blue) !important;
+}
+.scheduler__header--has-events {
+    background-color: var(--dark-blue) !important;
+}
+.scheduler__header--has-events a {
+    color: white !important;
+}
+.scheduler__day.js-scheduler__day {
+    background-color: var(--dark-blue) !important;
+}
+.scheduler__events-overlay.scheduler__events-overlay--has-events.js-scheduler__events-overlay {
+    background-color: var(--dark-blue) !important;
+}
+
+.scheduler__card--session-past {
+    background-color: var(--dark-blue) !important;
+}
