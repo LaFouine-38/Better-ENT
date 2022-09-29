@@ -274,11 +274,25 @@ button.burger.js-burger {
 a.services-shortcut__link:hover {
     transition: 0.3s;
     border-radius: 20px !important;
-    transition-timing-function: ease-in-out;
-    background-color: #222858 !important;
+    width: 100%;
+}
+
+ul.services-shortcut > li.services-shortcut__item{
+    position: relative;
+}
+
+li.services-shortcut__item > div.shortcut-background{
+    position: absolute;
+    z-index: -1;
+    box-sizing: border-box;
+    background-color: white;
+    height: -webkit-fill-available;
+    width: 0%;
 }
 
 li.services-shortcut__item.services-shortcut__item--current>.services-shortcut__link {
+    position: static;
+    z-index: 1000;
     border-radius: 20px !important;
 }
 
