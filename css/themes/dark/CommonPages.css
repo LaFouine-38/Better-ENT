@@ -82,7 +82,7 @@ li.services-shortcut__item > a:hover {
     outline-style: none !important; }
 
 li.services-shortcut__item:hover > div.shortcut-background{
-    transition: 0.3s ease-in-out;
+    transition: 0.25s ease-in-out;
     border-radius: 20px !important;
     width: 100%;
 }
