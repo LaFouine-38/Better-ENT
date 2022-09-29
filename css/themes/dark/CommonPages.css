@@ -71,15 +71,43 @@ li.dropdown__item.js-dropdown__item a:hover {
 li.services-shortcut__item.services-shortcut__item--current>.services-shortcut__link {
     border-radius: 20px !important;
     background-color: var(--hover-button) !important;
-    outline-style: none !important; }
-li.services-shortcut__item>a {
+    outline-style: none !important;
+}
+/* li.services-shortcut__item>a {
     border-radius: 0px !important;
-    outline-style: none !important; }
+    outline-style: none !important; } */
 li.services-shortcut__item>a:hover {
-    transition: 0.3s;
-    background-color: var(--hover-button) !important;
+    background-color: transparent !important;
     border-radius: 20px !important;
     outline-style: none !important; }
+
+li.services-shortcut__item:hover> div.shortcut-background{
+    transition: 0.3s ease-in-out;
+    border-radius: 20px !important;
+    width: 100%;
+}
+
+ul.services-shortcut > li.services-shortcut__item{
+    position: relative;
+}
+
+li.services-shortcut__item > div.shortcut-background{
+    transition: 0.3s;
+    position: absolute;
+    z-index: -1;
+    box-sizing: border-box;
+    background-color: var(--hover-button);
+    height: -webkit-fill-available;
+    width: 0%;
+    border-radius: 20px;
+}
+
+li.services-shortcut__item.services-shortcut__item--current>.services-shortcut__link {
+    position: static;
+    z-index: 1000;
+    border-radius: 20px !important;
+}
+
 
 /* hover a */
 .container a {
@@ -88,3 +116,4 @@ li.services-shortcut__item>a:hover {
 .container a:hover {
     transition: 0.3s;
     color: var(--light-blue) !important; }
+
