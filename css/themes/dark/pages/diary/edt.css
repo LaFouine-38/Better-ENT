@@ -41,9 +41,9 @@
     opacity: 0.65 !important;
 }
 
-.scheduler__card-link {
+/*.scheduler__card-link {
     background-color: var(--dark-blue) !important;
-}
+}*/
 
 .scheduler__card-link * {
     color: white !important;
