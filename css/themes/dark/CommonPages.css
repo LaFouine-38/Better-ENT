@@ -76,12 +76,12 @@ li.services-shortcut__item.services-shortcut__item--current>.services-shortcut__
 /* li.services-shortcut__item>a {
     border-radius: 0px !important;
     outline-style: none !important; } */
-li.services-shortcut__item>a:hover {
+li.services-shortcut__item > a:hover {
     background-color: transparent !important;
     border-radius: 20px !important;
     outline-style: none !important; }
 
-li.services-shortcut__item:hover> div.shortcut-background{
+li.services-shortcut__item:hover > div.shortcut-background{
     transition: 0.3s ease-in-out;
     border-radius: 20px !important;
     width: 100%;
@@ -97,7 +97,7 @@ li.services-shortcut__item > div.shortcut-background{
     z-index: -1;
     box-sizing: border-box;
     background-color: var(--hover-button);
-    height: -webkit-fill-available;
+    height: 100%;
     width: 0%;
     border-radius: 20px;
 }
