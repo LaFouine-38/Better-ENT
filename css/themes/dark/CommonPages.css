@@ -99,6 +99,7 @@ li.services-shortcut__item > div.shortcut-background{
     background-color: var(--hover-button);
     height: 100%;
     width: 0%;
+    bottom: 0px;
     border-radius: 20px;
 }
 
