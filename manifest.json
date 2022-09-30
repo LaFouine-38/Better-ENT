@@ -89,16 +89,7 @@
       "css": [
         "css/themes/dark/pages/diary/prochainement.css"
       ]
-    },
-
-    /*{
-      "matches": [
-        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CDT_AFFICHAGE*"
-      ],
-      "css": [
-        "css/themes/dark/pages/diary/edt.css"
-      ]
-    }*/ // Désactive à cause de la flemme car c chiant a dev (ya trop de couleurs et ils l'on coder comme des chiens leur edt : <div class="scheduler__card-title text--ellipsis ">TECHNOLOGIE SCIENCES DE L'NGENIIEUR</div> NON MAIS ON EST OU A ECRIRE DU TEXTE DANS DES DIVs BANDE DE FDP)
+    }
 
 
     
