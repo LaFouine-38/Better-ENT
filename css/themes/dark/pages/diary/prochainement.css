@@ -25,3 +25,35 @@ div.panel--outlined {
     border-color: transparent !important;
     border-radius: 20px !important;
     background-color: var(--hover-button) !important; }
+
+/* Div quand clique sur un devoirs a droite */
+.modal__body {
+    background-color: var(--blue) !important; }
+.modal__body a {
+    color: #006dcc !important; }
+.modal__body a:hover {
+    transition: 0.3s;
+    color: var(--light-blue) !important; }
+button.btn.btn--primary.btn.btn--primary {
+    border-radius: 20px !important;
+    color: white !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+button.btn.btn--primary.btn.btn--primary:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    border-radius: 20px !important;
+    background-color: var(--hover-button) !important; }
+button.btn.btn--secondary.btn.btn--secondary {
+    position: absolute;
+    left: 15px;
+    color: white !important;
+    background-color: transparent;
+    border-radius: 20px !important;
+    border-color: rgb(168, 31, 31) !important; }
+button.btn.btn--secondary.btn.btn--secondary:hover {
+    transition: 0.3s !important;
+    color: white !important;
+    border-radius: 20px !important;
+    border-color: transparent !important;
+    background-color: rgb(168, 31, 31) !important; }
