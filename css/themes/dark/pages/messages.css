@@ -106,3 +106,15 @@ ul.dropdown__list>li>button:hover {
     border-radius: 20px !important;
     border-color: transparent !important;
     background-color: var(--hover-button) !important; }
+
+/* Boutton Rédiger un message */
+input.btn.btn--primary.js-afficherNouveauMessage {
+    border-radius: 20px !important;
+    color: white !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+input.btn.btn--primary.js-afficherNouveauMessage:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    border-radius: 20px !important;
+    background-color: var(--hover-button) !important; }

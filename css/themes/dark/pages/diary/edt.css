@@ -41,9 +41,13 @@
     opacity: 0.65 !important;
 }
 
-/*.scheduler__card-link {
+.scheduler__card-link {
     background-color: var(--dark-blue) !important;
-}*/
+}
+
+.scheduler__card.scheduler__card--session.scheduler__card--session-past.js-scheduler__cdt-event>.scheduler__card-body div {
+    color: rgb(0, 0, 0) !important;
+}
 
 .scheduler__card-link * {
     color: white !important;

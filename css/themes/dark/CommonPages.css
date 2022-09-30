@@ -78,16 +78,17 @@ li.services-shortcut__item > a:hover {
     outline-style: none !important; }
 li.services-shortcut__item:hover > div.shortcut-background{
     transition: 0.25s ease-in-out;
+    background-color: var(--hover-button);
     border-radius: 20px !important;
     width: 100%; }
 ul.services-shortcut > li.services-shortcut__item{
     position: relative; }
 li.services-shortcut__item > div.shortcut-background{
-    transition: 0.3s;
+    transition: 0.5s;
     position: absolute;
     z-index: -1;
     box-sizing: border-box;
-    background-color: var(--hover-button);
+    background-color: var(--blue);
     height: 100%;
     width: 0%;
     bottom: 0px;
