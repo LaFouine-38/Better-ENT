@@ -89,6 +89,15 @@
       "css": [
         "css/themes/dark/pages/diary/prochainement.css"
       ]
+    },
+
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE&ACTION=AFFICHER_ELEVES_TAF*"
+      ],
+      "css": [
+        "css/themes/dark/pages/diary/travailAfaire.css"
+      ]
     }
 
 
