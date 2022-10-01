@@ -28,14 +28,10 @@
       "js": ["scripts/emploiDuTemps.js", "scripts/handlers/requestHandler.js"
       ]
     },
-    {
-      "matches": [
-        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE&ACTION=AFFICHER_ELEVES_TAF&filtreAVenir=true"
-      ],
-      "css": [
-        "css/travailAFaire.css"
-      ]
-    },
+
+
+
+    
     {
       "matches": [
         "https://fleming-isere.ent.auvergnerhonealpes.fr/"

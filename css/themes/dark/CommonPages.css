@@ -99,9 +99,9 @@ li.services-shortcut__item.services-shortcut__item--current>.services-shortcut__
     border-radius: 20px !important; }
 
 /* hover a */
-.container a {
+main a {
     transition: 0.3s;
     color: #006dcc !important; }
-.container a:hover {
+main a:hover {
     transition: 0.3s;
     color: var(--light-blue) !important; }
