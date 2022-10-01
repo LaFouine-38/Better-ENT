@@ -48,3 +48,26 @@ label.checkbox-pills__label.checkbox-pills__label--secondary.checkbox-pills__lab
     border-color: transparent !important;
     border-radius: 20px !important;
     background-color: var(--hover-button) !important; }
+
+/* Onglet TOUT */
+    /* Texte */
+    tbody * {
+        color: white !important; }
+    /* Div selection personnalisée */
+    div.panel.panel--outlined.panel--tinted {
+        border-color: transparent !important;
+        border-radius: 20px !important;
+        background-color: var(--dark-blue) !important; }
+    div.panel.panel--outlined.panel--tinted span {
+        color: white !important; }
+    div.panel.panel--outlined.panel--tinted label {
+        color: white !important;
+        background-color: var(--blue) !important; }
+    div.panel.panel--outlined.panel--tinted label:hover {
+        transition: 0.3s !important;
+        background-color: var(--hover-button) !important; }
+    select#matiere-select {
+        color: white !important;
+        border-color: transparent !important;
+        border-radius: 20px !important;
+        background-color: var(--blue) !important; }
