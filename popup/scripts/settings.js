@@ -24,7 +24,7 @@ add.addEventListener('click', (e) => {
 })
 
 //btns handler
-document.addEventListener('click', function (e) {
+document.addEventListener('click', function(e) {
     if (e.target.classList.contains('delete-btn')) {
         e.target.parentNode.remove()
             chrome.storage.local.remove(`extEnt-${e.target.getAttribute('data-pseudo')}`, (e) => {
