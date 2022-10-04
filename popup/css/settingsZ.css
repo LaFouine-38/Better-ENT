@@ -2,7 +2,6 @@
   color: white;
   font-family: 'Nunito', sans-serif;
 }
-
 body {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/legrandz.png") !important;
   background-size: cover;

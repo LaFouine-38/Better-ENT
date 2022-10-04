@@ -49,7 +49,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
         if (tab.url.startsWith('https://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO?execution=')){
             await chrome.scripting.executeScript({
                 target: {tabId: tabId},
-                files: ["scripts/connection/connexion3.js"]
+                files: [/*"scripts/utils/hash.js" ,*/"scripts/connection/connexion3.js"]
             })
         }
         if (requestStorage.sender == 'connexion1') {
