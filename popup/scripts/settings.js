@@ -249,4 +249,3 @@ function updateProfilInStorage(keyPseudo, newType, newPseudo, newPassword) {
         displayProfiles()
     })
 }
-
