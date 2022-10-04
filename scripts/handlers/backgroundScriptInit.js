@@ -1,5 +1,5 @@
 try {
-    importScripts("./../background_scripts/updatePageEventHandler.js", "./../background_scripts/connexionUrlHandler.js");
+    importScripts("./../background_scripts/updatePageEventHandler.js", "./../background_scripts/connexionUrlHandler.js", "./../background_scripts/fileLoader.js");
 } catch (e) {
     console.log(e);
 }
