@@ -1,5 +1,5 @@
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
-    if (tab.status == "complete")
+    if (tab.status == "complete"){
         if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/')){
             await chrome.scripting.insertCSS({
                 target: {tabId: tabId},
