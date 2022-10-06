@@ -13,10 +13,10 @@ function displayProfiles() {
 
 function addTemplate(/*type, */pseudo/*, password*/) {
     let newElement =
-    `<div class="user" data-pseudo=${pseudo}>
-        <span style="bottom: 100%;">&nbsp;${pseudo}</span>
-        <button class="btn-profil connect-btn">Se connecter</button>
-    </div>`
+        `<div class="user" data-pseudo="${pseudo}">
+            <span style="bottom: 100%;">&nbsp;${pseudo}</span>
+            <button class="btn-profil connect-btn">Se connecter</button>
+        </div>`
     container.innerHTML += newElement
 }
 
@@ -24,9 +24,11 @@ document.addEventListener('click', function (e) {
     if (e.target.classList.contains('connect-btn')) {
         const pseudo = e.target.parentNode.getAttribute('data-pseudo')
         chrome.storage.local.get([`extEnt-${pseudo}`], (data) => {
-            chrome.runtime.sendMessage({ sender: "popup", action: "connexionInit", infos: {
-                type: data[`extEnt-${pseudo}`].type, pseudo: data[`extEnt-${pseudo}`].pseudo, password: data[`extEnt-${pseudo}`].password
-            }});
+            chrome.runtime.sendMessage({
+                sender: "popup", action: "connexionInit", infos: {
+                    type: data[`extEnt-${pseudo}`].type, pseudo: data[`extEnt-${pseudo}`].pseudo, password: data[`extEnt-${pseudo}`].password
+                }
+            });
         })
     }
 });

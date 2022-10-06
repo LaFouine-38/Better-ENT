@@ -1,3 +1,4 @@
+import { decrypt, encrypt } from "../../../scripts/utils/hash.js"
 import { displayProfiles } from "./displayProfiles.js"
 
 export function initEdition(editBtn) {
@@ -48,25 +49,10 @@ function updateProfilInStorage(keyPseudo, newType, newPseudo, newPassword) {
     chrome.storage.local.get([`extEnt-${keyPseudo}`], (data) => {
         if (typeof data[`extEnt-${keyPseudo}`] !== 'undefined') {
             const profil = data[`extEnt-${keyPseudo}`]
-            let finished = false
-            let decrypted = profil.password.split('')
-            for(let i = 0; i < profil.password.length; i+=profil.pseudo.length){
-                if (finished){
-                    break
-                }
-                for (let e = 0; e < profil.pseudo.length; e++){
-                    if (!profil.password[i+e]){
-                        let finished = true
-                        break
-                    }
-                    let textCharCode = profil.password[i+e].charCodeAt(0)
-                    decrypted[i+e] = String.fromCharCode(textCharCode-profil.pseudo[e].charCodeAt(0))
-                }
-            }
             let updateAccount = {
                 type: profil.type,
                 pseudo: profil.pseudo,
-                password: decrypted.join(''),
+                password: decrypt(profil.pseudo, profil.password),
             }
             if (newType) {
                 updateAccount.type = newType
@@ -76,33 +62,19 @@ function updateProfilInStorage(keyPseudo, newType, newPseudo, newPassword) {
             }
             if (newPassword) {
                 let onlyStars = true
-                for (let char of newPassword){
+                for (let char of newPassword) {
                     console.log(char)
-                    if (char !== "*" || newPassword.length !== updateAccount.password.length){
+                    if (char !== "*" || newPassword.length !== updateAccount.password.length) {
                         onlyStars = false
                         break
                     }
                 }
-                if (!onlyStars){
-                    updateAccount.password = newPassword   
+                if (!onlyStars) {
+                    updateAccount.password = newPassword
                 }
             }
-            finished = false
-            let encrypted = updateAccount.password.split('')
-            for(let i = 0; i < updateAccount.password.length; i+=updateAccount.pseudo.length){
-                if (finished){
-                    break
-                }
-                for (let e = 0; e < updateAccount.pseudo.length; e++){
-                    if (!updateAccount.password[i+e]){
-                        let finished = true
-                        break
-                    }
-                    let textCharCode = updateAccount.password[i+e].charCodeAt(0)
-                    encrypted[i+e] = String.fromCharCode(updateAccount.pseudo[e].charCodeAt(0)+textCharCode)
-                }
-            }
-            updateAccount.password = encrypted.join('')
+
+            updateAccount.password = encrypt(updateAccount.pseudo, updateAccount.password)
 
             chrome.storage.local.remove([`extEnt-${keyPseudo}`])
             chrome.storage.local.set({ [`extEnt-${updateAccount.pseudo}`]: updateAccount })

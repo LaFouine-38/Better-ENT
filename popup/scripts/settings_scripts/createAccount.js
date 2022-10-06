@@ -1,8 +1,8 @@
+import { encrypt } from "../../../scripts/utils/hash.js"
 import { addTemplate } from "./addTemplate.js"
 
 export function createAccount(type, pseudo, password) {
     const errorField = document.querySelector('#errorField')
-    console.log(pseudo, type, password)
     if ((!type || type == "Type de session") || !pseudo || !password) {
         return errorField.innerText = "Certains champs ne sont pas remplis. Tous les champs sont obligatoires."
     }
@@ -10,26 +10,12 @@ export function createAccount(type, pseudo, password) {
         return errorField.innerText = "Pseudo incorrect, veulliez respecter le format suivant p.nom"
     }
 
-    let finished = false
-    let encrypted = password.split('')
-    for(let i = 0; i < pseudo.length; i+=pseudo.length){
-        if (finished){
-            break
-        }
-        for (let e = 0; e < pseudo.length; e++){
-            if (!password[i+e]){
-                let finished = true
-                break
-            }
-            let textCharCode = password[i+e].charCodeAt(0)
-            encrypted[i+e] = String.fromCharCode(pseudo[e].charCodeAt(0)+textCharCode)
-        }
-    }
+    let encrypted = encrypt(pseudo, password)
 
     const newAccount = {
         type: type,
         pseudo: pseudo,
-        password: encrypted.join('')
+        password: encrypted
     }
 
     chrome.storage.local.get([`extEnt-${pseudo}`], (data) => {
