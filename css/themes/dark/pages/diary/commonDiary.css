@@ -1,0 +1,37 @@
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #8f8f8f; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;} /* Importer les couleurs */
+
+/* Barre en haut */
+.content-toolbar.content-toolbar--gutter-sm.content-toolbar--title.content-toolbar--buttons {
+    background-color: var(--blue);
+}
+.content-toolbar.content-toolbar--gutter-sm.content-toolbar--title.content-toolbar--buttons span {
+    color: white !important;
+}
+
+/* Boutton carré jaune appuyé */
+form#js-personalNoteEdition * {
+    color: white !important;
+    background-color: var(--blue) !important; }
+form#js-personalNoteEdition textarea {
+    outline: none !important;
+    border-color: rgba(255, 255, 255, 0.5); }
+button#js-cancelEditPersonalNote {
+    color: white !important;
+    background-color: transparent;
+    border-radius: 20px !important;
+    border-color: rgb(168, 31, 31) !important; }
+button#js-cancelEditPersonalNote:hover {
+    transition: 0.3s !important;
+    color: white !important;
+    border-radius: 20px !important;
+    border-color: transparent !important;
+    background-color: rgb(168, 31, 31) !important; }
+button.btn.btn--sm.btn--primary {
+    transition: 0.3s;
+    border-radius: 20px !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+button.btn.btn--sm.btn--primary:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    background-color: aqua !important; }

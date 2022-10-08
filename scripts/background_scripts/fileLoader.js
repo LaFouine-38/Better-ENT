@@ -72,6 +72,12 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
                 files: ["css/themes/dark/pages/diary/travailAfaire.css"]
             })
         }
+        if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CDT_SEANCE&ACTION=VIEW_SEANCE')) {
+            chrome.scripting.insertCSS({
+                target: {tabId: tabId},
+                files: ["css/themes/dark/pages/diary/commonDiary.css"]
+            })
+        }
 
         //ajouter les autres pages en suivant le modele
         //mettre tab.url == "lien" au lieu de startsWith("") si il faut un lien exact
