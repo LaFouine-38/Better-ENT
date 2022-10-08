@@ -17,6 +17,11 @@
   "background": {
     "service_worker": "scripts/handlers/backgroundScriptInit.js"
   },
+  "content_scripts": [
+    { "matches": [ "https://fleming-isere.ent.auvergnerhonealpes.fr/" ], "js": [ "scripts/connection/connexion1.js" ] },
+    { "matches": [ "https://cas.ent.auvergnerhonealpes.fr/login?service=https%3A%2F%2Ffleming-isere.ent.auvergnerhonealpes.fr%2Fsg.do%3FPROC%3DIDENTIFICATION_FRONT" ], "js": [ "scripts/connection/connexion2.js" ] },
+    { "matches": [ "https://cas.ent.auvergnerhonealpes.fr/saml/SAMLAssertionConsumer" ], "js": [ "scripts/connection/connexion4.js" ] }
+  ],
   "web_accessible_resources": [
     {
       "resources": ["assets/legrandz.png"],

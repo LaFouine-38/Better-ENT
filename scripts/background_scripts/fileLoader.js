@@ -1,5 +1,5 @@
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
-    if (tab.status == "complete") {
+    /*if (tab.status == "complete") {
 
         //                  JS                  //
 
@@ -35,8 +35,8 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
                 target: {tabId: tabId},
                 files: ["lienDuFichier(le meme que dans manifest.json)", "c'est vraiment utile que je réexplique ?"]
             })
-        }*/
-    }
+        }
+    }*/
 
     if (tab.status == "loading") {
 
