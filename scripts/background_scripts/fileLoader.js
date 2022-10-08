@@ -48,12 +48,6 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
                 files: ["css/themes/dark/CommonPages.css"]
             })
         }
-        if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE&ACTION=AFFICHER_ELEVES_TAF&filtreAVenir=true')) {
-            chrome.scripting.insertCSS({
-                target: { tabId: tabId },
-                files: ["css/travailAFaire.css"]
-            })
-        }
         if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL')) {
             chrome.scripting.insertCSS({
                 target: { tabId: tabId },
@@ -64,6 +58,18 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
             chrome.scripting.insertCSS({
                 target: {tabId: tabId},
                 files: ["css/themes/dark/pages/messages.css"]
+            })
+        }
+        if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CLASSEUR_PEDA&ACTION=AFFICHER_ELEVES_ACCUEIL')) {
+            chrome.scripting.insertCSS({
+                target: {tabId: tabId},
+                files: ["css/themes/dark/pages/diary/prochainement.css"]
+            })
+        }
+        if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE&ACTION=AFFICHER_ELEVES_TAF')) {
+            chrome.scripting.insertCSS({
+                target: {tabId: tabId},
+                files: ["css/themes/dark/pages/diary/travailAfaire.css"]
             })
         }
 
