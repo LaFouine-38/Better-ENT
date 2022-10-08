@@ -1,0 +1,78 @@
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #8f8f8f; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;} /* Importer les couleurs */
+
+/* Divs en haut */
+.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    background-color: var(--blue) !important; }
+div.content-filter {
+    background-color: var(--blue) !important; }
+
+/* Divs au centre le travail à faire*/
+.panel.panel--outlined.panel--padding-sm.panel--rounded-md.panel--no-overflow.slug.slug--sm.js-taf-container {
+    border-color: transparent !important;
+    border-radius: 20px;
+    background-color: var(--blue) !important; }
+
+/* Boutons Déclarer fait */
+a.btn.btn--sm.btn--secondary.js-async.js-taf__btn-marquer-fait-non-fait {
+    border-radius: 20px !important;
+    color: white !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+a.btn.btn--sm.btn--secondary.js-async.js-taf__btn-marquer-fait-non-fait:hover {
+    transition: 0.3s !important;
+    border-color: transparent !important;
+    border-radius: 20px !important;
+    background-color: var(--hover-button) !important; }
+
+/* Div de droite */
+.panel.panel--no-margin.js-infos__panel label.form__label {
+    color: white !important; }
+.panel.panel--no-margin.js-infos__panel p {
+    color: white !important; }
+/* Selecteur Matières */
+select#matiere {
+    color: white !important;
+    outline: none !important;
+    border-color: transparent !important;
+    border-radius: 20px !important;
+    background-color: var(--blue) !important; }
+/* Boutons Statut du travail */
+label.checkbox-pills__label.checkbox-pills__label--secondary.checkbox-pills__label--sm.js-refresh-trigger {
+    border-radius: 20px !important;
+    color: white !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+label.checkbox-pills__label.checkbox-pills__label--secondary.checkbox-pills__label--sm.js-refresh-trigger:hover {
+    transition: 0.3s !important;
+    border-color: transparent !important;
+    border-radius: 20px !important;
+    background-color: var(--hover-button) !important; }
+
+/* Texte à gauche des devoirs (les dates) */
+ul.list--unstyled>li>p {
+    color: var(--light-gray) !important;
+}
+
+/* Onglet TOUT */
+    /* Texte */
+    tbody * {
+        color: white !important; }
+    /* Div selection personnalisée */
+    div.panel.panel--outlined.panel--tinted {
+        border-color: transparent !important;
+        border-radius: 20px !important;
+        background-color: var(--dark-blue) !important; }
+    div.panel.panel--outlined.panel--tinted span {
+        color: white !important; }
+    div.panel.panel--outlined.panel--tinted label {
+        color: white !important;
+        background-color: var(--blue) !important; }
+    div.panel.panel--outlined.panel--tinted label:hover {
+        transition: 0.3s !important;
+        background-color: var(--hover-button) !important; }
+    select#matiere-select {
+        color: white !important;
+        border-color: transparent !important;
+        border-radius: 20px !important;
+        background-color: var(--blue) !important; }

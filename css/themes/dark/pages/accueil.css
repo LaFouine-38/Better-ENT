@@ -1,0 +1,52 @@
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;}
+
+body {
+    color: white !important;
+}
+
+.container.container--no-toolbar.container--bounded a:hover {
+    transition: 0.3s;
+    color: var(--light-blue) !important;
+}
+
+.container.container--no-toolbar.container--bounded a {
+    transition: 0.3s;
+    color: #006dcc !important;
+}
+
+div.panel {
+    color: white !important;
+    background-color: var(--blue) !important;
+    border-radius: 20px !important;
+    border-color: transparent;
+}
+
+article.panel.panel--full.panel--no-margin.panel--success.js-travail-a-faire {
+    background-color: transparent;
+}
+
+.divider {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+p.p-like.p-like--no-margin.text--slate-dark {
+    color: white !important;
+}
+
+input#NB_ITEMS_BLOG_ET_FORUM {
+    background-color: var(--blue) !important;
+    color: white !important;
+}
+
+input#search-rubriques-treeview {
+    background-color: var(--blue) !important;
+    color: white !important;
+}
+
+.jstree-wholerow {
+    color: white !important;
+}
+
+.jstree-wholerow.jstree-wholerow-hovered {
+    background-color: #006dcc !important;
+}
