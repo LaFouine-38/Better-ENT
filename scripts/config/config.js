@@ -5,8 +5,10 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
                 chrome.storage.local.set({extEntConfig: {theme: "dark", systemVersion: chrome.runtime.getManifest().version}})
             }
             else if (data['extEntConfig'].systemVersion !== chrome.runtime.getManifest().version){
-                console.log('notsamever')
-                chrome.runtime.sendMessage({sender: "config"})
+                chrome.tabs.create({
+                    url: 'popup/update.html',
+                    selected: true
+                })
                 prevConfig = data['extEntConfig']
                 chrome.storage.local.remove([`extEntConfig`])
                 chrome.storage.local.set({extEntConfig: {theme: prevConfig.theme, systemVersion: chrome.runtime.getManifest().version}})
