@@ -23,19 +23,15 @@
         "https://fleming-isere.ent.auvergnerhonealpes.fr/*"
       ],
       "css": [
-        "css/styles.css"
+        "css/themes/dark/CommonPages.css"
       ],
       "js": ["scripts/emploiDuTemps.js", "scripts/handlers/requestHandler.js"
       ]
     },
-    {
-      "matches": [
-        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE&ACTION=AFFICHER_ELEVES_TAF&filtreAVenir=true"
-      ],
-      "css": [
-        "css/travailAFaire.css"
-      ]
-    },
+
+
+
+    
     {
       "matches": [
         "https://fleming-isere.ent.auvergnerhonealpes.fr/"
@@ -59,7 +55,49 @@
       "js": [
         "scripts/connection/connexion4.js"
       ]
+    },
+
+
+
+
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL*"
+      ],
+      "css": [
+        "css/themes/dark/pages/accueil.css"
+      ]
+    },
+    
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=MESSAGERIE*"
+      ],
+      "css": [
+        "css/themes/dark/pages/messages.css"
+      ]
+    },
+
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CLASSEUR_PEDA&ACTION=AFFICHER_ELEVES_ACCUEIL*"
+      ],
+      "css": [
+        "css/themes/dark/pages/diary/prochainement.css"
+      ]
+    },
+
+    {
+      "matches": [
+        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE&ACTION=AFFICHER_ELEVES_TAF*"
+      ],
+      "css": [
+        "css/themes/dark/pages/diary/travailAfaire.css"
+      ]
     }
+
+
+    
   ],
   "web_accessible_resources": [
     {
