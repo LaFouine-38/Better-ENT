@@ -17,21 +17,7 @@
   "background": {
     "service_worker": "scripts/handlers/backgroundScriptInit.js"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "https://fleming-isere.ent.auvergnerhonealpes.fr/*"
-      ],
-      "css": [
-        "css/themes/dark/CommonPages.css"
-      ],
-      "js": ["scripts/emploiDuTemps.js", "scripts/handlers/requestHandler.js"
-      ]
-    },
-
-
-
-    
+  "content_scripts": [    
     {
       "matches": [
         "https://fleming-isere.ent.auvergnerhonealpes.fr/"
@@ -58,25 +44,6 @@
     },
 
 
-
-
-    {
-      "matches": [
-        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL*"
-      ],
-      "css": [
-        "css/themes/dark/pages/accueil.css"
-      ]
-    },
-    
-    {
-      "matches": [
-        "https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=MESSAGERIE*"
-      ],
-      "css": [
-        "css/themes/dark/pages/messages.css"
-      ]
-    },
 
     {
       "matches": [
