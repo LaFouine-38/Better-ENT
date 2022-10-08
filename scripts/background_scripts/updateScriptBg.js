@@ -1,13 +1,15 @@
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    //TODO - faire une page update.html qui envoie la request ici et qui affiche un truc en mode
-    //extension mise à jour fermeture dans 5,4,3,2,1...
-    console.log("request getted" + request.sender)
-    if (request.sender == 'config'){
+chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
+    if (request.sender == 'updatePage' && request.action == 'executeUpdateScript'){
         function updateOnBg(){
-            //code a executer si update
+            //code en cas d'update
             return
         }
         updateOnBg()
 
+    }
+    if (request.sender == 'updatePage' && request.action == 'close'){
+        chrome.tabs.query({ active: true }, function(tabs) {  
+            chrome.tabs.remove(tabs[0].id);   
+        });
     }
 })
