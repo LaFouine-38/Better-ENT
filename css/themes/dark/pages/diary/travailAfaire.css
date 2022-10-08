@@ -1,4 +1,4 @@
-* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;} /* Importer les couleurs */
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #8f8f8f; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;} /* Importer les couleurs */
 
 /* Divs en haut */
 .content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
@@ -48,6 +48,11 @@ label.checkbox-pills__label.checkbox-pills__label--secondary.checkbox-pills__lab
     border-color: transparent !important;
     border-radius: 20px !important;
     background-color: var(--hover-button) !important; }
+
+/* Texte à gauche des devoirs (les dates) */
+ul.list--unstyled>li>p {
+    color: var(--light-gray) !important;
+}
 
 /* Onglet TOUT */
     /* Texte */
