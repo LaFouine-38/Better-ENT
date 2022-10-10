@@ -1,6 +1,6 @@
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
 
-    //                  IMPORTANT
+    //                  IMPORTANT : Pour importer des scripts js, importez les dans le manifest
 
     if (tab.status == "loading") {
 
@@ -48,7 +48,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
         /* if(tab.url.startsWith('match-pattern-sans-etoile')){
             chrome.scripting.insertCSS({
                 target: {tabId: tabId},
-                files: ["lienDuFichier(le meme que dans manifest.json)", "un autre si besoin", "un autre si besoin", "t'as capté"]
+                files: ["lienRelatifDuFichier", "un autre si besoin", "un autre si besoin", "t'as capté"]
             })
         }*/
     }
