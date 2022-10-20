@@ -66,4 +66,12 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
 
         }
     }
+
+    //temp
+    if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/') && tab.status == "complete"){
+        await chrome.scripting.executeScript({
+            target: {tabId: tabId},
+            files: ["scripts/navMenu.js"]
+        })
+    }
 })

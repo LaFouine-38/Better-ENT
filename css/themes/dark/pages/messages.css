@@ -1,0 +1,120 @@
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;}
+
+body {
+    color: white !important;
+}
+
+/* Panel */
+div#menu_contenu {
+    background-color: var(--blue);
+    border-color: transparent; }
+.content-toolbar.content-toolbar--title.content-toolbar--buttons {
+    background-color: var(--blue) !important; }
+.panel.panel--no-margin.panel--naked.panel--bg-lightest {
+    background-color: var(--blue); }
+
+/* Bouttons reçus, envoyés, brouillons, corbeille, archives... à gauche */
+.jstree-wholerow.jstree-wholerow-clicked {
+    background-color: var(--hover-button) !important;
+    border: transparent;
+    border-radius: 20px !important; }
+.jstree-wholerow-ul>li>a {
+    color: white !important; }
+.jstree-wholerow-hovered {
+    transition: 0.3s;
+    border-radius: 20px !important;
+    background-color: var(--hover-button) !important; }
+.jstree-wholerow {
+    border-radius: 20px;
+    border: transparent !important; }
+
+/* Boutton ajouter un dossier */
+button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg {
+    border-radius: 20px !important;
+    color: white !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+button.btn.btn--secondary.btn--sm.js-modalTrigger-ajouterDossierMsg:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    border-radius: 20px !important;
+    background-color: var(--hover-button) !important; }
+
+/* Panneau renseigner adresse electronique et celui d'en dessous */
+.msg.msg--NEUTRE.msg--neutral.js-notice {
+    border-radius: 20px !important;
+    border-color: transparent;
+    color: white !important;
+    background-color: var(--blue) !important; }
+.msg.msg--NEUTRE.msg--neutral.js-notice a {
+    color: var(--light-blue) !important; }
+
+/* Div Ajouter un dossier */
+.modal__body.js-modal__body {
+    color: white !important;
+    font-weight: 200;
+    background-color: var(--blue) !important; }
+button.btn.btn--warn.js-btn--warn {
+    color: white !important;
+    background-color: transparent;
+    border-radius: 20px !important;
+    border-color: rgb(168, 31, 31) !important; }
+button.btn.btn--warn.js-btn--warn:hover {
+    transition: 0.3s !important;
+    color: white !important;
+    border-radius: 20px !important;
+    border-color: transparent !important;
+    background-color: rgb(168, 31, 31) !important; }
+button.btn.btn--primary.js-valider-ajouter-dossier {
+    transition: 0.3s;
+    border-radius: 20px !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+button.btn.btn--primary.js-valider-ajouter-dossier:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    background-color: var(--hover-button) !important; }
+input#LIBELLE_DOSSIER { 
+    background-color: var(--blue) !important;
+    color: white !important; }
+
+/* Div Supprimer le dossier */
+button.btn.btn--primary.js-confirm-suppr-dossier {
+    transition: 0.3s;
+    border-radius: 20px !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+button.btn.btn--primary.js-confirm-suppr-dossier:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    background-color: var(--hover-button) !important; }
+
+/* Div 3 ptits points pour delete un dossier */
+.dropdown__content.js-dropdown__content {
+    border-radius: 0px !important;
+    border: transparent !important; }
+ul.dropdown__list {
+    border-radius: 0px !important; }
+ul.dropdown__list>li>button {
+    color: white !important;
+    border-radius: 0px !important;
+    border-color: 0px !important;
+    background-color: var(--blue) !important; }
+ul.dropdown__list>li>button:hover {
+    transition: 0.3s !important;
+    color: white !important;
+    border-radius: 20px !important;
+    border-color: transparent !important;
+    background-color: var(--hover-button) !important; }
+
+/* Boutton Rédiger un message */
+input.btn.btn--primary.js-afficherNouveauMessage {
+    border-radius: 20px !important;
+    color: white !important;
+    border-color: white !important;
+    background-color: var(--blue) !important; }
+input.btn.btn--primary.js-afficherNouveauMessage:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    border-radius: 20px !important;
+    background-color: var(--hover-button) !important; }
