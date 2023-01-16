@@ -22,7 +22,7 @@ export function createAccount(type, pseudo, password) {
         if (typeof data[`extEnt-${pseudo}`] !== 'undefined') {
             return errorField.innerText = "Un compte avec ce pseudo existe déjà !"
         } else {
-            chrome.storage.local.set({ ["extEnt-" + pseudo]: newAccount }, (e) => {
+            chrome.storage.local.set({[`extEnt-${pseudo}`]: newAccount }, (e) => {
                 chrome.storage.local.get(`extEnt-${pseudo}`, (data) => {
                     let profil = data[`extEnt-${pseudo}`]
                     addTemplate(profil.type, profil.pseudo, profil.password)

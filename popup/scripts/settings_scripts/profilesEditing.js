@@ -77,7 +77,7 @@ function updateProfilInStorage(keyPseudo, newType, newPseudo, newPassword) {
             updateAccount.password = encrypt(updateAccount.pseudo, updateAccount.password)
 
             chrome.storage.local.remove([`extEnt-${keyPseudo}`])
-            chrome.storage.local.set({ [`extEnt-${updateAccount.pseudo}`]: updateAccount })
+            chrome.storage.local.set({[`extEnt-${updateAccount.pseudo}`]: updateAccount})
         }
         displayProfiles()
     })

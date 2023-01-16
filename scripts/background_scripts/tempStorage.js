@@ -1,4 +1,4 @@
-if (/*cond prof co*/true){
+if (/*cond prof co (a redefinir)*/true){
     //delete tous les profils profs (mdp)
     setInterval(() => {
             //delete tous les profils profs (mdp)
