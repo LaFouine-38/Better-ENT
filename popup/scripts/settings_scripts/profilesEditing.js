@@ -1,4 +1,4 @@
-import { decrypt, encrypt } from "../../../scripts/utils/hash.js"
+import { decrypt, encrypt } from "../../../scripts/utils/crypt.js"
 import { displayProfiles } from "./displayProfiles.js"
 
 export function initEdition(editBtn) {

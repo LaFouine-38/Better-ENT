@@ -1,4 +1,4 @@
-import { encrypt } from "../../../scripts/utils/hash.js"
+import { encrypt } from "../../../scripts/utils/crypt.js"
 import { addTemplate } from "./addTemplate.js"
 
 export function createAccount(type, pseudo, password) {
