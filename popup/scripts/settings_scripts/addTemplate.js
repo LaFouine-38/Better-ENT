@@ -1,4 +1,4 @@
-import { decrypt } from "../../../scripts/utils/hash.js"
+import { decrypt } from "../../../scripts/utils/crypt.js"
 import { container } from "../settings.js"
 
 export function addTemplate(type, pseudo, password) {

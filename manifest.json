@@ -3,6 +3,7 @@
   "name": "Better ENT",
   "description": "Cette extension permet de moderniser l'apparence de l'ENT",
   "version": "1.0.0",
+  "update_url": "https://github.com/LaFouine-38/BetterENT-Fleming/blob/main/test.xml",
   "action": {
     "default_popup": "popup/popup.html"
   },
