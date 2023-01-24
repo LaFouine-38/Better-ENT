@@ -33,14 +33,20 @@
     </div>
     <div id="allProfiles"></div>
     </div>
-    <hr />
+    <hr/>
 
     <div style="margin-top: 100px;">
         <h2>Thème :</h2>
+        <p class="themeChoisi">Quel theme choisissez vous ?</p>
         <select id="selectThemeSelecter" name="theme" title="Choisissez votre thème" class="selectTheme" required>
             <option value="sombre" class="selectTheme" selected>Sombre</option>
             <option value="clair" class="selectTheme" disabled>Clair</option>
-        <p id="errorFieldTheme"></p>
+        </select>
+        <p class="pronoteChoix">Pronote sera-t-il affecté par le thème ?</p>
+        <select id="selectPronote" name="pronote" title="Pronote sera-t-il affecté par le thème" class="selectPronoteTheme" required>
+            <option value="Oui" class="selectPronoteThemeOui">Oui</option>
+            <option value="Non" class="selectPronoteThemeNon">Non</option>
+        </select>
     </div>
 
     <!-- <script src="./../scripts/utils/hash.js"></script> -->

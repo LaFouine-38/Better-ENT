@@ -25,7 +25,7 @@ h3 {
   bottom: 200px;
 }
 
-#barre{
+#barre {
   bottom: 100px;
 }
 
@@ -74,4 +74,22 @@ h3 {
   position: static;
   border-radius: 5px;
   border: 0;
+}
+
+.selectPronoteTheme {
+  width: 100px;
+  text-align: center;
+  height: 26px;
+  color: black;
+  position: static;
+  border-radius: 5px;
+  border: 0;
+}
+
+p.themeChoisi {
+  font-size: 17px;
+}
+
+p.pronoteChoix {
+  font-size: 17px;
 }

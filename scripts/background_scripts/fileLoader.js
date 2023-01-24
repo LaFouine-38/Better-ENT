@@ -49,6 +49,19 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
                 })
             }
 
+            // Load le css de Pronote
+            if (tab.url.startsWith('https://0382098z.index-education.net/pronote/eleve.html')) {
+                chrome.storage.local.get(['extEntConfig'], (data) => {
+                    if(data.extEntConfig.effectOnPronote) {
+                        chrome.scripting.insertCSS({
+                            target: {tabId: tabId},
+                            files: ["css/themes/dark/pronote.css"]
+                        })
+                    }
+                })
+
+            }
+
         //ajouter les autres pages en suivant le modele
         //mettre tab.url == "lien" au lieu de startsWith("") si il faut un lien exact
         /* if(tab.url.startsWith('match-pattern-sans-etoile')){

@@ -7,7 +7,7 @@ export function createAccount(type, pseudo, password) {
         return errorField.innerText = "Certains champs ne sont pas remplis. Tous les champs sont obligatoires."
     }
     if (pseudo[1] !== ".") {
-        return errorField.innerText = "Pseudo incorrect, veulliez respecter le format suivant p.nom"
+        return errorField.innerText = "Pseudo incorrect, veuillez respecter le format suivant p.nom"
     }
 
     let encrypted = encrypt(pseudo, password)

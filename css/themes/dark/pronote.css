@@ -1,0 +1,126 @@
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;}
+
+/* Common  à toutes les pages */
+    /* NavBar */
+    .objetBandeauEntete_menu {
+        background-color: var(--blue) !important;
+    }
+    .objetBandeauEntete_secondmenu {
+        background-color: var(--blue) !important;
+    }
+    div.ObjetBandeauEspace {
+        background-color: var(--blue) !important;
+    }
+    .ibe_etab_util {
+        color: white !important;
+    }
+    .ibe_util i {
+        color: white !important;
+    }
+    .ibe_util i:hover {
+        color: #ffb400 !important;
+        transition: 0.1s;
+    }
+
+
+
+
+
+/* PAGES --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Accueil */
+        /* Fond */
+        div.AffichagePageAccueil.dotty.eleve {
+            background-color: var(--dark-blue);
+            background-image: none;
+        }
+        /* Trucs épinglés (ché pas comment ça s'appelle) */
+
+            /* Ptit bouton pour acceder a la page entière (genre la ptite flèche en haut des articles) */
+            .as-button.bt-widget.icon.icon_affichage_widget {
+                background-color: var(--light-blue) !important;
+                border: var(--light-blue) !important;
+            }
+            .ocb_cont.as-input.as-date-picker {
+                background: var(--blue);
+                border-color: white !important;
+            }
+            .ocb_cont.as-input.as-date-picker:hover {
+                background: var(--hover-button) !important;
+                border: transparent !important;
+                transition: 0.3s;
+            }
+            .icon.btnImageIcon.btnImage.OmbreFocus {
+                background-color: var(--blue) !important;
+                /*border: white !important;
+                border-style: solid !important;
+                border-width: 1px !important;*/
+            }
+            .icon.btnImageIcon.btnImage.OmbreFocus:hover {
+                transition: 0.3s;
+                background-color: var(--hover-button) !important;
+                border: none !important;
+            }
+            /* EDT */
+            h3.text-center.ie-titre-couleur-lowercase.m-top {
+                color: white !important;
+            }
+            .widget.theme-cat-edt.edt { 
+                background-color: var(--blue) !important;
+            }
+            .widget.theme-cat-edt.edt * { 
+                color: white;
+            }
+            .widget.edt.theme-cat-edt > div::after { 
+                color: rgba(var(--theme-moyen1-rgb), 0.2) !important;
+            }
+
+            /* Dernières notes */
+            .widget.theme-cat-resultat.notes { 
+                background-color: var(--blue) !important;
+            }
+            .widget.theme-cat-resultat.notes * {
+                color: white;
+            }
+            .widget.theme-cat-resultat.notes > div::after {
+                color: rgba(var(--theme-moyen1-rgb), 0.2) !important;
+            }
+            ul.liste-clickable li:hover {
+                background-color: var(--hover-button) !important;
+                transition: 0.3s !important;
+            }
+            ul.liste-clickable li *:hover {
+                color: var(--light-blue) !important;
+                transition: 0.3s !important;
+            }
+            ul.liste-clickable li::before {
+                color: var(--light-blue) !important;
+            }
+            .as-info.fixed {
+                color: black !important;
+                background-color: var(--light-blue) !important;
+            }
+            .bareme {
+                color: black !important;
+            }
+
+            /* Liens utiles */
+            .widget.theme-cat-communication.lienutile { 
+                background-color: var(--blue) !important;
+            }
+            .widget.theme-cat-communication.lienutile * {
+                color: white;
+            }
+            .widget.theme-cat-communication.lienutile > div::after { 
+                color: rgba(var(--theme-moyen1-rgb), 0.2) !important;
+            }
+
+            /* Menu de la cantine */
+            .widget.theme-cat-communication.menudelacantine { 
+                background-color: var(--blue) !important;
+            }
+            .widget.theme-cat-communication.menudelacantine * { 
+                color: white;
+            }
+            .widget.theme-cat-communication.menudelacantine > div::after { 
+                color: rgba(var(--theme-moyen1-rgb), 0.2) !important;
+            }

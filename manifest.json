@@ -48,12 +48,23 @@
       "js": [
         "scripts/connection/connexion4.js"
       ]
+    },
+    {
+      "matches": [
+        "https://0382098z.index-education.net/pronote/eleve.html*"
+      ],
+      "js": [
+        "scripts/modifyPronoteLogo.js"
+      ]
     }
 
   ],
   "web_accessible_resources": [
     {
-      "resources": ["assets/legrandz.png"],
+      "resources": [
+        "assets/legrandz.png",
+        "assets/iconPronote.png"
+      ],
       "matches": ["https://fleming-isere.ent.auvergnerhonealpes.fr/*"]
     },
     {

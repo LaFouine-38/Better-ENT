@@ -50,3 +50,18 @@ input#search-rubriques-treeview {
 .jstree-wholerow.jstree-wholerow-hovered {
     background-color: #006dcc !important;
 }
+
+/* Notes (en bas de page) */
+ul.list--unstyled li div span {
+    color: white;
+    background-color: var(--blue);
+}
+
+ul.list--unstyled li div span.score__divider {
+    background-color: white;
+}
+
+ul.list--unstyled li div {
+    border: 0 !important;
+    background-color: var(--blue);
+}

@@ -4,7 +4,6 @@ import { initEdition, endingEdition, editProfil } from './settings_scripts/profi
 
 const add = document.querySelector("#add")
 export const container = document.querySelector("#allProfiles")
-window.onload = displayProfiles()
 
 add.addEventListener('click', (e) => {
     const pseudo = document.querySelector("#pseudo").value
@@ -46,3 +45,27 @@ document.addEventListener('focusout', (e) => {
         })
     }
 })
+
+document.getElementById("selectPronote").onchange = (event) => {
+    let index = event.target.value;
+    let configData;
+    chrome.storage.local.get(['extEntConfig'], (data) => {
+        data.extEntConfig.effectOnPronote = index == "Oui"
+        chrome.storage.local.set(data)
+    })
+}
+
+window.onload = () => {
+    displayProfiles()
+
+    let non = document.querySelector("option.selectPronoteThemeNon")
+    let oui = document.querySelector("option.selectPronoteThemeOui")
+
+    chrome.storage.local.get(['extEntConfig'], (data) => {
+        if(data.extEntConfig.effectOnPronote) {
+            oui.selected = true
+        } else {
+            non.selected = true
+        }
+    })  
+}
