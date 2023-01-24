@@ -9,7 +9,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
                     url: 'popup/update.html',
                     selected: true
                 })
-                prevConfig = data['extEntConfig']
+                prevConfig = {...data['extEntConfig']}
                 chrome.storage.local.remove([`extEntConfig`])
                 chrome.storage.local.set({extEntConfig: {theme: prevConfig.theme, systemVersion: chrome.runtime.getManifest().version, effectOnPronote: true}})
             }
