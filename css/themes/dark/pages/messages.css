@@ -95,12 +95,12 @@ button.btn.btn--primary.js-confirm-suppr-dossier:hover {
     border: transparent !important; }
 ul.dropdown__list {
     border-radius: 0px !important; }
-ul.dropdown__list>li>button {
+ul.dropdown__list >li > button {
     color: white !important;
     border-radius: 0px !important;
     border-color: 0px !important;
     background-color: var(--blue) !important; }
-ul.dropdown__list>li>button:hover {
+ul.dropdown__list >li > button:hover {
     transition: 0.3s !important;
     color: white !important;
     border-radius: 20px !important;
@@ -118,3 +118,34 @@ input.btn.btn--primary.js-afficherNouveauMessage:hover {
     border-color: transparent !important;
     border-radius: 20px !important;
     background-color: var(--hover-button) !important; }
+
+/* Menu (Panel) de gauche (celui où il y a les boutons "Reçus", "Envoyés", "Brouillons" ...) */
+.col.col--full.col--xs-12.col--sm-3.col--xl-2.app-layout-1__col.panel--bg-lightest.col--border {
+    background-color: var(--blue); }
+
+/* Div du contenu du message */
+.panel.panel--outlined {
+    background-color: var(--blue) !important;
+    border-color: transparent !important;
+    border-radius: 20px; }
+.btn.btn--secondary.js-repondreParticipation { /* Bouton "répondre" */
+    background-color: var(--blue) !important;
+    color: white !important;
+    border-radius: 100rem !important;
+    border-color: white !important; }
+.text--slate-dark {
+    color: white !important; }
+.btn.btn--as-link > span {
+    color: white !important; }
+.btn[disabled], span.btn--disabled {
+    background-color: transparent !important; }
+.col--gutter-sm.col--flex-grow * {
+    color: white !important; }
+.jumbofiles {
+    border-radius: 15px !important;
+    background-color: var(--blue) !important; }
+.jumbofiles * {
+    color: white !important; }
+.jumbofiles__thumb {
+    background-color: var(--blue) !important;
+}

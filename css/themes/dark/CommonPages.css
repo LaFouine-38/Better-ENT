@@ -97,6 +97,10 @@ li.services-shortcut__item.services-shortcut__item--current>.services-shortcut__
     position: static;
     z-index: 1000;
     border-radius: 20px !important; }
+nav.menu.hide {
+    display: block !important;
+    transform: translateX(-873px);
+    transition: 0.5s ease-in-out; }
 
 /* hover a */
 main a {
