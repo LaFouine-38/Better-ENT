@@ -17,6 +17,7 @@ div.content-filter {
 a.btn.btn--sm.btn--secondary.js-async.js-taf__btn-marquer-fait-non-fait {
     border-radius: 20px !important;
     color: white !important;
+    width: 90px;
     border-color: white !important;
     background-color: var(--blue) !important; }
 a.btn.btn--sm.btn--secondary.js-async.js-taf__btn-marquer-fait-non-fait:hover {
@@ -24,6 +25,20 @@ a.btn.btn--sm.btn--secondary.js-async.js-taf__btn-marquer-fait-non-fait:hover {
     border-color: transparent !important;
     border-radius: 20px !important;
     background-color: var(--hover-button) !important; }
+/* Bouton Rendre */
+.btn.btn--sm.btn--secondary {
+    transition: 0.3s;
+    width: 90px;
+    color: white !important;
+    border-color: white !important;
+    background-color: var(--blue) !important;
+    border-radius: 20px !important;
+}
+.btn.btn--sm.btn--secondary:hover {
+    transition: 0.3s;
+    border-color: transparent !important;
+    background-color: var(--hover-button) !important;
+}
 
 /* Div de droite */
 .panel.panel--no-margin.js-infos__panel label.form__label {

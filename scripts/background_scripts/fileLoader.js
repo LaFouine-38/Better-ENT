@@ -36,13 +36,13 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
                     files: ["css/themes/dark/pages/diary/prochainement.css"]
                 })
             }
-            if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE&ACTION=AFFICHER_ELEVES_TAF')) {
+            if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE')) {
                 chrome.scripting.insertCSS({
                     target: {tabId: tabId},
                     files: ["css/themes/dark/pages/diary/travailAfaire.css"]
                 })
             }
-            if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CDT_SEANCE&ACTION=VIEW_SEANCE')) {
+            if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CDT_SEANCE&ACTION=VIEW_SEANCE') || tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE')) {
                 chrome.scripting.insertCSS({
                     target: {tabId: tabId},
                     files: ["css/themes/dark/pages/diary/commonDiary.css"]
