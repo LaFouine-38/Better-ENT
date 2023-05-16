@@ -55,7 +55,7 @@
         "https://0382098z.index-education.net/pronote/eleve.html*"
       ],
       "js": [
-        "scripts/modifyPronoteLogo.js"
+        "scripts/pronote.js"
       ]
     }
 
