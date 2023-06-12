@@ -8,11 +8,12 @@
 ## Nouveautés
 
 *  **Connexion**: connexion automatique et rapide, création de profils..
-*  **Thème**: nouvelle interface de l'ENT
+*  **Thème**: nouvelle interface de l'ENT et de Pronote (thème sombre)
 
 ## Liens
 
-*   Soon
+*   Notre Discord : https://discord.gg/CgkXJrc2Yj
+*   L'ENT : https://fleming-isere.ent.auvergnerhonealpes.fr/
 
 ## License
 EZFA 2022©
