@@ -36,7 +36,7 @@
     },
     {
       "matches": [
-        "https://cas.ent.auvergnerhonealpes.fr/login?service=https%3A%2F%2Ffleming-isere.ent.auvergnerhonealpes.fr%2Fsg.do%3FPROC%3DIDENTIFICATION_FRONT"
+        "https://cas.ent.auvergnerhonealpes.fr/login?service=https%3A%2F%2Faristide-berges.ent.auvergnerhonealpes.fr%2Fsg.do%3FPROC%3DIDENTIFICATION_FRONT"
       ],
       "js": [
         "scripts/connection/connexion2.js"
