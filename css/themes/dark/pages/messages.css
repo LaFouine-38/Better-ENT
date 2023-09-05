@@ -109,6 +109,7 @@ ul.dropdown__list >li > button:hover {
 
 /* Boutton Rédiger un message */
 input.btn.btn--primary.js-afficherNouveauMessage {
+    transition: 0.3s;
     border-radius: 20px !important;
     color: white !important;
     border-color: white !important;
@@ -147,5 +148,24 @@ input.btn.btn--primary.js-afficherNouveauMessage:hover {
 .jumbofiles * {
     color: white !important; }
 .jumbofiles__thumb {
+    background-color: var(--blue) !important; }
+
+/* Div où l'on recherche des messages */
+.content-toolbar.content-toolbar--buttons {
+    background-color: var(--blue) !important; }
+button.btn.btn--primary.js-valider-recherche {
+    transition: 0.3s;
+    border: white solid 1px !important;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: var(--blue) !important; }
+button.btn.btn--primary.js-valider-recherche:hover {
+    transition: 0.3s;
+    border: none !important;
+    background-color: var(--hover-button) !important; }
+input#searchPanel {
+    border: white solid 1px !important;
     background-color: var(--blue) !important;
+    border-radius: 20px;
+    color: white !important;
 }

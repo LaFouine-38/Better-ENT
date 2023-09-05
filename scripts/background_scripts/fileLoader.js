@@ -7,7 +7,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
         //                  CSS                 //
 
         /* Common */
-        if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/')) {
+        if (tab.url.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr/')) {
             chrome.scripting.insertCSS({
                 target: { tabId: tabId },
                 files: ["css/themes/dark/CommonPages.css"]
@@ -16,7 +16,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
 
         /* Pages */
             /* Accueil */
-            if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL')) {
+            if (tab.url.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL')) {
                 chrome.scripting.insertCSS({
                     target: { tabId: tabId },
                     files: ["css/themes/dark/pages/accueil.css"]
@@ -24,25 +24,25 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
             }
 
             /* Messagerie */
-            if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=MESSAGERIE')) {
+            if (tab.url.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr/sg.do?PROC=MESSAGERIE')) {
                 chrome.scripting.insertCSS({
                     target: {tabId: tabId},
                     files: ["css/themes/dark/pages/messages.css"]
                 })
             }
-            if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CLASSEUR_PEDA&ACTION=AFFICHER_ELEVES_ACCUEIL')) {
+            if (tab.url.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr/sg.do?PROC=CLASSEUR_PEDA&ACTION=AFFICHER_ELEVES_ACCUEIL')) {
                 chrome.scripting.insertCSS({
                     target: {tabId: tabId},
                     files: ["css/themes/dark/pages/diary/prochainement.css"]
                 })
             }
-            if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE')) {
+            if (tab.url.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE')) {
                 chrome.scripting.insertCSS({
                     target: {tabId: tabId},
                     files: ["css/themes/dark/pages/diary/travailAfaire.css"]
                 })
             }
-            if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=CDT_SEANCE&ACTION=VIEW_SEANCE') || tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE')) {
+            if (tab.url.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr/sg.do?PROC=CDT_SEANCE&ACTION=VIEW_SEANCE') || tab.url.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr/sg.do?PROC=TRAVAIL_A_FAIRE')) {
                 chrome.scripting.insertCSS({
                     target: {tabId: tabId},
                     files: ["css/themes/dark/pages/diary/commonDiary.css"]
@@ -50,7 +50,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
             }
 
             // Load le css de Pronote
-            if (tab.url.startsWith('https://0382098z.index-education.net/pronote/eleve.html')) {
+            if (tab.url.startsWith('https://0382780r.index-education.net/pronote/eleve.html')) {
                 chrome.storage.local.get(['extEntConfig'], (data) => {
                     if(data.extEntConfig.effectOnPronote) {
                         chrome.scripting.insertCSS({

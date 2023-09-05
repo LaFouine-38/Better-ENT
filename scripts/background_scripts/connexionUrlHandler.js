@@ -1,13 +1,13 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.sender == 'popup' && request.action == 'connexionInit') {
         chrome.tabs.create({
-            url: 'https://fleming-isere.ent.auvergnerhonealpes.fr',
+            url: 'https://aristide-berges.ent.auvergnerhonealpes.fr',
             selected: true
         })
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             var activeTab = tabs[0];
             var tabId = activeTab.id;
-            if (activeTab.pendingUrl.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr')) {
+            if (activeTab.pendingUrl.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr')) {
                 requestStorage.pseudo = request.infos.pseudo
                 requestStorage.password = request.infos.password
                 requestStorage.type = request.infos.type
@@ -68,7 +68,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
     }
 
     //temp
-    if (tab.url.startsWith('https://fleming-isere.ent.auvergnerhonealpes.fr/') && tab.status == "complete"){
+    if (tab.url.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr/') && tab.status == "complete"){
         await chrome.scripting.executeScript({
             target: {tabId: tabId},
             files: ["scripts/navMenu.js"]
