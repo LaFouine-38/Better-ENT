@@ -9,7 +9,7 @@
 
 html {
     background-repeat    : repeat-x;
-    background-image     : url("chrome-extension://__MSG_@@extension_id__/assets/legrandz.png");
+    background-image     : url("chrome-extension://__MSG_@@extension_id__/assets/background.png");
     height               : 100%;
     background-position-x: 240px;
     background-position-y: -30px;

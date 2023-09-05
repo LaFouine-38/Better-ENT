@@ -23,7 +23,7 @@ footer{
 
 /*fond ecran*/
 body{
-  background-image: url("chrome-extension://__MSG_@@extension_id__/assets/legrandz.png") !important;
+  background-image: url("chrome-extension://__MSG_@@extension_id__/assets/background.png") !important;
   background-size: cover;
 }
 .fr-skiplinks{
