@@ -1,7 +1,8 @@
 window.onload = () => {
     setTimeout(() => {
         let icon = document.querySelector("div.ibe_image_etab > img")       //  Changer le logo de Pronote
-        icon.src = "https://zupimages.net/up/23/17/arzr.png"                //
+        icon.src = "https://zupimages.net/up/23/36/vulm.png"                //
+        icon.classList.add("margin-left10")
 
         const noteBouton = document.getElementById('GInterface.Instances[0].Instances[1]_Wrapper').children.item(1)
         setInterval(() => {

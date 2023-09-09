@@ -1,6 +1,10 @@
 * {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;}
 
 /* Common  à toutes les pages */
+
+    .margin-left10 {
+        margin-left: 10px;
+    }   
     /* NavBar */
     .objetBandeauEntete_menu {
         background-color: var(--blue) !important;
