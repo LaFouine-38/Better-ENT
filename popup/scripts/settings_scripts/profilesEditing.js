@@ -6,7 +6,7 @@ export function initEdition(editBtn) {
     editBtn.target.parentNode.querySelector('.delete-btn').classList.remove('delete-btn')
     editBtn.target.classList.add('cancel-btn')
     editBtn.target.classList.remove('edit-btn')
-    editBtn.target.parentNode.querySelectorAll('.credential-input').forEach((e, index) => {
+    editBtn.target.parentNode.querySelectorAll('.input-profil').forEach((e, index) => {
         e.disabled = false
     })
     editBtn.target.parentNode.querySelector('.save-btn').innerText = "Sauvegarder"
@@ -14,7 +14,7 @@ export function initEdition(editBtn) {
     document.querySelectorAll('.btn-profil:not(.save-btn, .cancel-btn)').forEach(e => {
         e.disabled = true
     })
-    document.querySelectorAll('div.profil-creation > .credential-input').forEach(e => {
+    document.querySelectorAll('div.profil-creation > .input-profil').forEach(e => {
         e.disabled = true
     })
 }
@@ -32,7 +32,7 @@ export function endingEdition(cancelBtn) {
     cancelBtn.target.parentNode.querySelector('.save-btn').classList.remove('save-btn')
     cancelBtn.target.parentNode.querySelector('.cancel-btn').classList.add('edit-btn')
     cancelBtn.target.parentNode.querySelector('.cancel-btn').classList.remove('cancel-btn')
-    cancelBtn.target.parentNode.querySelectorAll('.credential-input').forEach((e) => {
+    cancelBtn.target.parentNode.querySelectorAll('.input-profil').forEach((e) => {
         e.disabled = true
     })
     cancelBtn.target.parentNode.querySelector('.delete-btn').innerText = "Supprimer le profil"
@@ -40,7 +40,7 @@ export function endingEdition(cancelBtn) {
     document.querySelectorAll('.btn-profil:not(.save-btn, .cancel-btn)').forEach(e => {
         e.disabled = false
     })
-    document.querySelectorAll('div.profil-creation > .credential-input').forEach(e => {
+    document.querySelectorAll('div.profil-creation > .input-profil').forEach(e => {
         e.disabled = false
     })
 }

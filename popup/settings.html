@@ -7,41 +7,33 @@
     <title>Paramètres</title>
     <meta name="description" content="#1 de l'Extension ENT">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/settingsDark.css">
-    <style>
-        @font-face {
-            font-family: Nunito;
-            src: url('../assets/Nunito-Bold.ttf');
-        }
-
-        h1 {
-            font-family: Nunito
-        }
-    </style>
+    <link rel="stylesheet" href="css/settings.css">
+    <style>@font-face{ font-family: Nunito; src: url('../assets/Nunito-Bold.ttf');} h1{font-family: Nunito}</style>
 </head>
 
 <body class="settings" id="body">
     <h1 style="text-align: center;"><strong>Param&egrave;tres</strong></h1>
     <h2><strong>Profils :</strong></h2>
-    <div id="create-profile" class="profil-like">
-        <p>(les identifiants que vous mettrez ne sont pas vérifiés)</p>
+    <p>(les identifiants que vous mettrez ne sont pas vérifiés)</p>
+    <hr />
+    <div class="profil-creation">
         &nbsp;
-        <select id="create-typeSelect" name="session" title="Veuillez choisir votre type de session" class="credential-input"
+        <select id="typeSelect" name="session" title="Veuillez choisir votre type de session" class="input-profil"
             required>
-            <option value="0" class="credential-input" selected disabled>Type de session</option>
-            <option value="1" class="credential-input">Eleve</option>
-            <option value="2" class="credential-input">Parent</option>
+            <option value="0" class="input-profil" selected disabled>Type de session</option>
+            <option value="1" class="input-profil">Eleve</option>
+            <option value="2" class="input-profil">Parent</option>
         </select>
         &nbsp;
-        <input id="pseudo" class="credential-input" type="text" placeholder="Identifiant : x.xxxxx" required />
+        <input id="pseudo" class="input-profil" type="text" placeholder="Identifiant : x.xxxxx" required />
         &nbsp;
-        <input id="password" class="credential-input" type="password" placeholder="Mot de passe : xxxxxx " required />
-        <button id="create-btn" class="btn-profil" style="float: right;">Créer</button>
+        <input id="password" class="input-profil" type="password" placeholder="Mot de passe : xxxxxx " required />
+        <button id="add" class="btn-profil" style="float: right;">Créer</button>
         <p id="errorField"></p>
     </div>
     <div id="allProfiles"></div>
     </div>
-    <hr />
+    <hr/>
 
     <div style="margin-top: 100px;">
         <h2>Thème :</h2>
@@ -51,17 +43,14 @@
             <option value="clair" class="selectTheme" disabled>Clair</option>
         </select>
         <p class="pronoteChoix">Pronote sera-t-il affecté par le thème ?</p>
-        <select id="selectPronote" name="pronote" title="Pronote sera-t-il affecté par le thème"
-            class="selectPronoteTheme" required>
+        <select id="selectPronote" name="pronote" title="Pronote sera-t-il affecté par le thème" class="selectPronoteTheme" required>
             <option value="Oui" class="selectPronoteThemeOui">Oui</option>
             <option value="Non" class="selectPronoteThemeNon">Non</option>
         </select>
     </div>
 
     <!-- <script src="./../scripts/utils/hash.js"></script> -->
-    <!-- <script type="module" src="./scripts/settings.js"></script> -->
-    <script type="module" src="./scripts/includeJs.js"></script>
-
+    <script type="module" src="./scripts/settings.js"></script>
 </body>
 
 </html>

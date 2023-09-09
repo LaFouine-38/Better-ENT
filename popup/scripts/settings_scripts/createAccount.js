@@ -26,8 +26,8 @@ export function createAccount(type, pseudo, password) {
                 chrome.storage.local.get(`extEnt-${pseudo}`, (data) => {
                     let profil = data[`extEnt-${pseudo}`]
                     addTemplate(profil.type, profil.pseudo, profil.password)
-                    document.querySelector("#create-pseudo").value = ""
-                    document.querySelector("#create-password").value = ""
+                    document.querySelector("#pseudo").value = ""
+                    document.querySelector("#password").value = ""
                 })
             })
         }
