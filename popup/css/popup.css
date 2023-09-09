@@ -14,12 +14,15 @@
     background-color: rgba(59, 61, 79, 0.5) !important;
 }
 
+#users {
+    margin-top: 15px;
+}
+
 .user {
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
     text-align: left;
     font-size: 16px;
     background-color: var(--blue);
-    margin-top: 15px;
     padding: 10px;
 }
 
