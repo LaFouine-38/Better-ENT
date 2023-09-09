@@ -15,7 +15,7 @@ function addTemplate(/*type, */pseudo/*, password*/) {
     let newElement =
         `<div class="user" data-pseudo="${pseudo}">
             <span style="bottom: 100%;">&nbsp;${pseudo}</span>
-            <button class="btn-profil connect-btn">Se connecter</button>
+            <input type="button" value="Se connecter" class="btn-profil connect-btn">
         </div>`
     container.innerHTML += newElement
 }
@@ -32,3 +32,11 @@ document.addEventListener('click', function (e) {
         })
     }
 });
+
+
+// let basicTools = document.getElementById("basicTools").children
+
+// for (let i = 0; i < basicTools.length; i++) {
+//     const element = basicTools.item(i)
+//     element.
+// }

@@ -36,6 +36,7 @@ h3 {
   width: 150px;
   border-color: transparent;
   border-radius: 7px;
+  margin-left: 10px;
 }
 
 .btn-profil:disabled {

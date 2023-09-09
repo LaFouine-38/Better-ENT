@@ -1,3 +1,5 @@
+* {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;}
+
 * {
     user-select: none;
 }
@@ -5,6 +7,7 @@
 #hostname {
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
     text-align: center;
+    margin-bottom: 10px;
 }
 
 :root.desktop .tool:hover {
@@ -15,6 +18,9 @@
     margin: var(--popup-gap) var(--popup-gap-extra-thin);
     text-align: left;
     font-size: 16px;
+    background-color: var(--blue);
+    margin-top: 15px;
+    padding: 10px;
 }
 
 div#users>.user>span {
@@ -24,8 +30,6 @@ div#users>.user>span {
 div#users>.user>span:hover {
     transition: 0.3s;
     border-radius: 5px;
-    color: rgb(0, 0, 0) !important;
-    background-color: rgba(0, 206, 209, 0.5);
 }
 
 hr {
@@ -37,19 +41,23 @@ hr {
 
 hr,
 .toolRibbon {
-    background-color: rgba(0, 206, 209, 0.5) !important;
+    background-color: var(--blue) !important;
+    width: 300px;
 }
 
 .btn-profil {
+    transition: 0.3s;
     color: white;
-    background-color: rgba(0, 206, 209, 0.5);
-    border-radius: 5px;
-    border: 0;
+    text-shadow: none;
+    width: 110px;
+    background-color: transparent;
+    border-radius: 20px !important;
+    border: none !important;
+    /* border: white solid 1px !important; */
 }
 
 .connect-btn {
     float: right;
-    border: 0;
     color: white;
     left: 0%;
     font-size: 16px;
@@ -58,5 +66,36 @@ hr,
 }
 
 .btn-profil:hover {
-    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    background-color: var(--hover-button);
+}
+
+#main {
+    padding-top: 10px;
+    width: 270px;
+}
+
+#basicTools {
+    border-top: white solid 2px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+}
+#basicTools div:hover {
+    transition: 0.3s;
+    background-color: var(--hover-button);
+}
+#basicTools div {
+    transition: 0.3s;
+    height: 54px;
+    width: 54px;
+}
+#basicTools div a {
+    height: 54px;
+    width: 54px;
+}
+#basicTools div a img {
+    margin-top: 12px;
+    margin-left: 12px;
+    height: 30px;
 }
