@@ -48,6 +48,12 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
                     files: ["css/themes/dark/pages/diary/commonDiary.css"]
                 })
             }
+            if (tab.url.startsWith('https://aristide-berges.ent.auvergnerhonealpes.fr/sg.do?PROC=CDT_AFFICHAGE')) {
+                chrome.scripting.insertCSS({
+                    target: {tabId: tabId},
+                    files: ["css/themes/dark/pages/diary/edt.css"]
+                })
+            }
 
             // Load le css de Pronote
             if (tab.url.startsWith('https://0382780r.index-education.net/pronote/eleve.html')) {

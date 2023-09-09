@@ -1,6 +1,6 @@
 * {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;} /* Importer les couleurs */
 
-/* Background EDT */
+/* Background EDT
 .scheduler__days {
     background-color: var(--dark-blue) !important;
 }
@@ -30,13 +30,13 @@
     background-color: var(--dark-blue) !important;
 }
 
-/* Time marker */
+Time marker
 .scheduler__time-marker-current-day, .scheduler__time-marker-slot {
     background-color: white !important;
     outline: 1px solid white !important;
 }
 
-/* Cours */
+Cours
 .scheduler__card--session-past>* {
     opacity: 0.65 !important;
 }
@@ -51,4 +51,13 @@
 
 .scheduler__card-link * {
     color: white !important;
+} */
+
+
+.scheduler__slot--break {
+    height: calc(4rem * 90 / 60) !important;
+}
+
+.scheduler__slots :nth-child(6) {
+    height: calc(4rem * 90 / 60) !important;
 }
