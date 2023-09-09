@@ -2,13 +2,13 @@ import { displayProfiles } from './settings_scripts/displayProfiles.js';
 import { createAccount } from './settings_scripts/createAccount.js';
 import { initEdition, endingEdition, editProfil } from './settings_scripts/profilesEditing.js';
 
-const add = document.querySelector("#add")
+const add = document.querySelector("#create-btn")
 export const container = document.querySelector("#allProfiles")
 
 add.addEventListener('click', (e) => {
-    const pseudo = document.querySelector("#pseudo").value
-    const password = document.querySelector("#password").value
-    const type = document.querySelector("#typeSelect").options[document.querySelector("#typeSelect").selectedIndex].text
+    const pseudo = document.querySelector("#create-pseudo").value
+    const password = document.querySelector("#create-password").value
+    const type = document.querySelector("#create-typeSelect").options[document.querySelector("#create-typeSelect").selectedIndex].text
     createAccount(type, pseudo, password)
 
 })

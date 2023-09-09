@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Paramètres</title>
+    <meta name="description" content="#1 de l'Extension ENT">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/settingsDark.css">
+    <style>
+        @font-face {
+            font-family: Nunito;
+            src: url('../assets/Nunito-Bold.ttf');
+        }
+
+        h1 {
+            font-family: Nunito
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <div id="create-profile" class="profil-like">
+                <div class="credential-inputs-container">
+                    <select id="create-typeSelect" name="session" title="Veuillez choisir votre type de session"
+                        class="credential-input" required>
+                        <option value="0" class="credential-input" selected disabled>Type de session</option>
+                        <option value="1" class="credential-input">Eleve</option>
+                        <option value="2" class="credential-input">Parent</option>
+                    </select>
+                    &nbsp;
+                    <input id="create-pseudo" class="credential-input" type="text" placeholder="Identifiant : x.xxxxx"
+                        required />
+                    &nbsp;
+                    <input id="create-password" class="credential-input" type="password"
+                        placeholder="Mot de passe : xxxxxx " required />
+                </div>
+                <div id="credentials-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="info-icon" fill="white" viewBox="0 0 512 512">
+                        <path
+                            d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z" />
+                    </svg>
+                    <span id="info-message">(les identifiants que vous mettrez ne sont pas vérifiés)</span>
+                </div>
+                <button id="create-btn" class="btn-profil">Créer</button>
+                <span id="errorField"></span>
+            </div>
+            <div data-type="${type}" data-pseudo="${pseudo}" class="profil-like profil-cree">
+                &nbsp;
+                <select id="ent-${pseudo}" name="session" title="Veuillez choisir votre type de session"
+                    class="select-menu credential-input" required disabled=true>
+                    <option value="0" class="credential-input" disabled>Type de session</option>
+                    <option value="1" class="credential-input" ${type=="Eleve" ? "selected" : "" }>Eleve</option>
+                    <option value="2" class="credential-input" ${type=="Parent" ? "selected" : "" }>Parent</option>
+                </select>
+                &nbsp;
+                <input class="pseudo credential-input" type="text" value="${pseudo}" required disabled=true>
+                &nbsp;
+                <input class="password credential-input" type="password" value="stars" required disabled=true />
+                <button data-pseudo="${pseudo}" class="btn-profil delete-btn" style="float: right;">Supprimer le
+                    profil</button>
+                <button data-pseudo="${pseudo}" class="btn-profil edit-btn" style="float: right;">Modifier le
+                    profil</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
