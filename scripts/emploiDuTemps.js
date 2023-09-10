@@ -4,4 +4,30 @@ function emploiDuTempsUpdater() {
     timeStamps.forEach((timestamp, index) => {
         timestamp.innerHTML = intervals[index]
     })
+
+    const cours = document.querySelectorAll(".scheduler__card.scheduler__card--session.js-scheduler__cdt-event")
+    cours.forEach(_cours => {
+        const color = _cours.attributes[1].nodeValue.split("; ")[1].split(": ")[1]
+        const newColor = darkenHexColor(color, 0.4)
+        _cours.style.backgroundColor = newColor
+    })
+}
+
+function darkenHexColor(hexColor, factor) {
+    factor = typeof factor === 'number' ? factor : 0.2
+    hexColor = hexColor.replace(/^#/, '')
+    const r = parseInt(hexColor.substring(0, 2), 16)
+    const g = parseInt(hexColor.substring(2, 4), 16)
+    const b = parseInt(hexColor.substring(4, 6), 16)
+    const newR = Math.max(0, r - r * factor)
+    const newG = Math.max(0, g - g * factor)
+    const newB = Math.max(0, b - b * factor)
+
+    const newHexColor =
+        '#' +
+        Math.round(newR).toString(16).padStart(2, '0') +
+        Math.round(newG).toString(16).padStart(2, '0') +
+        Math.round(newB).toString(16).padStart(2, '0')
+
+    return newHexColor
 }

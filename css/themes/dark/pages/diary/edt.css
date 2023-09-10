@@ -1,63 +1,57 @@
 * {--dark-blue: #2a3961; --blue: #43497d; --light-blue: #678FFF; --light-gray: #333333; --gray: #282828; --dark-gray: #1C1C1C; --hover-button: #222858;} /* Importer les couleurs */
 
-/* Background EDT
-.scheduler__days {
-    background-color: var(--dark-blue) !important;
+.container.container--full.bg--white div {
+    background-color: var(--dark-blue);
 }
-.scheduler__header--has-events {
-    background-color: var(--dark-blue) !important;
-}
-.scheduler__header--has-events a {
+.container.container--full.bg--white div * {
     color: white !important;
 }
-.scheduler__day.js-scheduler__day {
-    background-color: var(--dark-blue) !important;
-}
-.scheduler__events-overlay.scheduler__events-overlay--has-events.js-scheduler__events-overlay {
-    background-color: var(--dark-blue) !important;
-}
-
-.scheduler__card--session-past {
-    background-color: var(--dark-blue) !important;
-}
-
-.scheduler__slot--break {
-    background-color: var(--dark-blue) !important;
-    background-image: repeating-linear-gradient(45deg,rgba(138, 138, 138, 0.15),rgba(138, 138, 138, 0.15) 1px,transparent 2px,transparent 4px) !important;
-}
-
-.scheduler__slot--today {
-    background-color: var(--dark-blue) !important;
-}
-
-Time marker
-.scheduler__time-marker-current-day, .scheduler__time-marker-slot {
-    background-color: white !important;
-    outline: 1px solid white !important;
-}
-
-Cours
-.scheduler__card--session-past>* {
-    opacity: 0.65 !important;
-}
-
-.scheduler__card-link {
-    background-color: var(--dark-blue) !important;
-}
-
-.scheduler__card.scheduler__card--session.scheduler__card--session-past.js-scheduler__cdt-event>.scheduler__card-body div {
-    color: rgb(0, 0, 0) !important;
-}
-
-.scheduler__card-link * {
+.scheduler__slots * {
     color: white !important;
-} */
-
+}
 
 .scheduler__slot--break {
     height: calc(4rem * 90 / 60) !important;
+    background-image: repeating-linear-gradient(45deg,rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0.15) 1px,transparent 2px,transparent 4px) !important;
 }
 
 .scheduler__slots :nth-child(6) {
     height: calc(4rem * 90 / 60) !important;
+}
+
+.scheduler__card.scheduler__card--session.js-scheduler__cdt-event {
+    background-image: none !important;
+}
+.scheduler__card.scheduler__card--session.js-scheduler__cdt-event * {
+    background: transparent !important;
+}
+
+.content-toolbar.content-toolbar--tabs.content-toolbar--buttons {
+    background-color: var(--blue);
+}
+
+.content-toolbar.content-toolbar--tabs.content-toolbar--buttons * {
+    color: var(--light-blue);
+}
+
+form.js-cdt-navigation div.content-filter {
+    background-color: var(--blue);
+}
+
+.flex__item.align-self--end * {
+    color: var(--light-blue);
+}
+
+.flex__item.flex__item--to-left * {
+    background-color: var(--blue);
+    border-radius: 20px;
+    color: white;
+}
+
+.js-scheduler-modal__details-templates div {
+    background-color: var(--blue) !important;
+}
+.js-scheduler-modal__details-templates div header div {
+    background-color: var(--blue) !important;
+    background-image: none !important;
 }
