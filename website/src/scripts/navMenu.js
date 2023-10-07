@@ -10,10 +10,10 @@ export const openNavMenu = () => {
             <h1>LE PROJET</h1>
         </div>
         <div>
-            <h1>QUI SOMMES NOUS</h1>
+            <h1>QUI SOMMES NOUS ?</h1>
         </div>
         <div>
-            <h1>TÉLÉCHERGER</h1>
+            <h1>TÉLÉCHARGER</h1>
         </div>
     </div>
     `
