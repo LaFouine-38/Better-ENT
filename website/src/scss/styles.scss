@@ -1,0 +1,46 @@
+@import 'src/scss/default/reset';
+@import 'src/scss/default/base';
+@import 'src/scss/default/colors';
+@import 'src/scss/navMenu';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+nav {
+    width: 100vw;
+    position: absolute;
+    z-index: 100;
+    height: 58px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: var(--dark-blue);
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    z-index: 0;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-size: 36px;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+    }
+    button {
+        margin-top: 114px;
+        font-size: 32px;
+        font-family: 'Kanit', sans-serif;
+        background-color: var(--blue);
+        width: 264px;
+        height: 58px;
+        border-radius: 19px;
+    }
+}
