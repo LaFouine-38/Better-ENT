@@ -6,7 +6,7 @@ export function initEdition(editBtn) {
     editBtn.target.parentNode.querySelector('.delete-btn').classList.remove('delete-btn')
     editBtn.target.classList.add('cancel-btn')
     editBtn.target.classList.remove('edit-btn')
-    editBtn.target.parentNode.querySelectorAll('.credential-input').forEach((e, index) => {
+    editBtn.target.parentNode.parentNode.querySelectorAll('.credential-input').forEach((e, index) => {
         e.disabled = false
     })
     editBtn.target.parentNode.querySelector('.save-btn').innerText = "Sauvegarder"
@@ -20,11 +20,10 @@ export function initEdition(editBtn) {
 }
 
 export function editProfil(e) {
-    const pseudo = e.target.parentNode.querySelector(".pseudo").value
-    const password = e.target.parentNode.querySelector(".password").value
-    const type = e.target.parentNode.querySelector('.select-menu').options[e.target.parentNode.querySelector(".select-menu").selectedIndex].text
+    const pseudo = e.target.parentNode.parentNode.querySelector(".pseudo").value
+    const password = e.target.parentNode.parentNode.querySelector(".password").value
+    const type = e.target.parentNode.parentNode.querySelector('.select-menu').options[e.target.parentNode.querySelector(".select-menu").selectedIndex].text
     updateProfilInStorage(e.target.getAttribute('data-pseudo'), type, pseudo, password)
-
 }
 
 export function endingEdition(cancelBtn) {

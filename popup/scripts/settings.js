@@ -3,7 +3,7 @@ import { createAccount } from './settings_scripts/createAccount.js';
 import { initEdition, endingEdition, editProfil } from './settings_scripts/profilesEditing.js';
 
 const add = document.querySelector("#create-btn")
-export const container = document.querySelector("#allProfiles")
+export const container = document.querySelector("#profiles-container")
 
 add.addEventListener('click', (e) => {
     const pseudo = document.querySelector("#create-pseudo").value

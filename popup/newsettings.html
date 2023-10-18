@@ -8,6 +8,8 @@
     <meta name="description" content="#1 de l'Extension ENT">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/settingsDark.css">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com;"> -->
+
     <style>
         @font-face {
             font-family: Nunito;
@@ -22,7 +24,7 @@
 
 <body>
     <main>
-        <div>
+        <div id="create-profile-container" class="container">
             <div id="create-profile" class="profil-like">
                 <div class="credential-inputs-container">
                     <select id="create-typeSelect" name="session" title="Veuillez choisir votre type de session"
@@ -38,17 +40,24 @@
                     <input id="create-password" class="credential-input" type="password"
                         placeholder="Mot de passe : xxxxxx " required />
                 </div>
-                <div id="credentials-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="info-icon" fill="white" viewBox="0 0 512 512">
-                        <path
-                            d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z" />
-                    </svg>
+                <button id="create-btn" class="btn-profil">Créer</button>
+            </div>
+            <div id="credentials-info">
+                <svg xmlns="http://www.w3.org/2000/svg" id="question-mark" fill="white" viewBox="0 0 512 512">
+                    <path
+                        d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z" />
+                </svg>
+                <div id="info-message-container" class="info-message-container">
                     <span id="info-message">(les identifiants que vous mettrez ne sont pas vérifiés)</span>
                 </div>
-                <button id="create-btn" class="btn-profil">Créer</button>
-                <span id="errorField"></span>
             </div>
-            <div data-type="${type}" data-pseudo="${pseudo}" class="profil-like profil-cree">
+            <span id="errorField"></span>
+        </div>
+
+        <div id="profiles-container" class="container">
+
+        </div>
+        <!-- <div data-type="${type}" data-pseudo="${pseudo}" class="profil-like profil-cree">
                 &nbsp;
                 <select id="ent-${pseudo}" name="session" title="Veuillez choisir votre type de session"
                     class="select-menu credential-input" required disabled=true>
@@ -65,10 +74,25 @@
                 <button data-pseudo="${pseudo}" class="btn-profil edit-btn" style="float: right;">Modifier le
                     profil</button>
             </div>
+        </div> -->
+        <div style="margin-top: 100px;">
+            <h2>Thème :</h2>
+            <p class="themeChoisi">Quel theme choisissez vous ?</p>
+            <select id="selectThemeSelecter" name="theme" title="Choisissez votre thème" class="selectTheme" required>
+                <option value="sombre" class="selectTheme" selected>Sombre</option>
+                <option value="clair" class="selectTheme" disabled>Clair</option>
+            </select>
+            <p class="pronoteChoix">Pronote sera-t-il affecté par le thème ?</p>
+            <select id="selectPronote" name="pronote" title="Pronote sera-t-il affecté par le thème"
+                class="selectPronoteTheme" required>
+                <option value="Oui" class="selectPronoteThemeOui">Oui</option>
+                <option value="Non" class="selectPronoteThemeNon">Non</option>
+            </select>
         </div>
     </main>
-
-    <script src="" async defer></script>
+    <script src="./scripts/settings_scripts/gsap.min.js"></script>
+    <script src="./scripts/settings_scripts/handleAnims.js"></script>
+    <script type="module" src="./scripts/settings.js"></script>
 </body>
 
 </html>
