@@ -12,7 +12,7 @@
 
 ## Liens
 
-*   Notre Discord : https://discord.gg/CgkXJrc2Yj
+*   Notre Discord : https://discord.gg/JVr7HXeffs
 *   L'ENT : https://aristide-berges.ent.auvergnerhonealpes.fr/
 
 ## License
